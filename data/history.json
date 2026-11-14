@@ -2,33 +2,33 @@
   {
     "week_id": "2026-W46",
     "date": "2026-11-15",
-    "episode_title": "Agentic Wallets & Silicon Wiretaps: สัปดาห์แห่งเงินตรา AI และชิปสอดแนม",
+    "episode_title": "Agentic Wallets & Silicon Wiretaps",
     "topics": [
       {
-        "title": "OpenAI ส่ง ChatGPT Wallet ปล่อยเอเจนต์ช็อปปิ้งแทนมนุษย์แบบมีไฟเขียว",
+        "title": "OpenAI จุดชนวน Fintech ยุคใหม่: ส่ง ChatGPT Wallet ให้ AI กดซื้อของแทนคน",
         "track": "ai_frontier"
       },
       {
-        "title": "Google จับมือ Adobe ยกทัพครีเอทีฟบุก Gemini และ Google Workspace",
-        "track": "ai_frontier"
-      },
-      {
-        "title": "Apple HomeView เปิดขายแล้ว ฮาร์ดแวร์จอกลางคุมบ้านและบันเทิงครบวงจร",
+        "title": "Apple HomeView วางขายแล้ว: ฮาร์ดแวร์คุมบ้านและศูนย์รวมความบันเทิงรุ่นล่าสุด",
         "track": "hardware_silicon"
       },
       {
-        "title": "หายนะความปลอดภัย Grok Build ปล่อยไก่ทำข้อมูลหลุดทะลักกว่า 35,000 แอป",
+        "title": "หายนะโค้ดดิ้งเอเจนต์: Grok Build ทำข้อมูลหลุดกระจุยกว่า 35,000 แอป",
         "track": "software_devtools"
       },
       {
-        "title": "ทลายกำแพงความจำ Multi-Granularity Memory สปีดเอเจนต์ฉลาดขึ้นโดยไม่ต้องเทรนใหม่",
+        "title": "NVIDIA แอบรับปากสภาสหรัฐฯ: เทคนิคแกะรอยฮาร์ดแวร์ป้องกันลักลอบส่งออกทำได้จริง",
+        "track": "deep_tech"
+      },
+      {
+        "title": "ทลายกำแพงความจำ AI: วิจัยใหม่สกัด Multi-Granularity Memory ข้ามเอเจนต์ไม่ต้องเทรนซ้ำ",
         "track": "local_open_ai"
       },
       {
-        "title": "NVIDIA แอบรับปากทำได้ ระบบแกะรอยชิปต้านลักลอบส่งออก สวนทางคำคัดค้านในอดีต",
-        "track": "deep_tech"
+        "title": "Google Search แปลงร่าง: อัดขุมพลัง Gemini 4 Hydrogen สู่ระบบค้นหาระดับโลก",
+        "track": "ai_frontier"
       }
     ],
-    "updated_at": "2026-11-15T01:55:39.364721+07:00"
+    "updated_at": "2026-11-15T02:16:34.811244+07:00"
   }
 ]

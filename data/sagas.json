@@ -4,26 +4,26 @@
     "series_title": "The Frontier AI Model Race (Google • OpenAI • Anthropic)",
     "vendor": "Multi-Lab Frontier",
     "episode_badge": "EP.46 • FINTECH AGENT ESCALATION",
-    "completion_pct": 72,
+    "completion_pct": 74,
     "previously_on": "สมรภูมิโมเดลเน้นแข่ง Benchmark การคิดวิเคราะห์และแก้โค้ดแบบก้าวกระโดด",
-    "latest_twist": "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent กดซื้อของและทำธุรกรรมได้เองอย่างเป็นทางการ ส่วน Anthropic เตรียมโรดโชว์ IPO",
-    "power_up_multiplier": "💳 Agentic Autonomous Commerce + IPO Valuation",
-    "next_episode_rumor": "จับตาระบบความปลอดภัยขั้นสูงสุดในการป้องกันคลังเงินของ AI Agents",
+    "latest_twist": "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent ใน ChatGPT Work และ Codex ทำธุรกรรมซื้อของได้จริง พร้อมระบบคุ้มครองบัตร",
+    "power_up_multiplier": "💳 Agentic Direct Payment + 50% Dev Output",
+    "next_episode_rumor": "การทดสอบระบบอนุมัติธุรกรรมแบบ Real-time Multi-agent ในสเกลองค์กร",
     "element_roster": [
       {
         "number": "01",
         "symbol": "Gm",
-        "name": "Gemini (Adobe Hybrid)",
-        "role_tag": "Creative Productivity",
-        "multiplier_badge": "Adobe Core",
-        "status": "UNLOCKED"
+        "name": "Gemini 4 Hydrogen",
+        "role_tag": "Search Core",
+        "multiplier_badge": "Search Native",
+        "status": "NEW"
       },
       {
         "number": "02",
         "symbol": "Cl",
         "name": "Claude Sonnet",
         "role_tag": "Hardware Designer",
-        "multiplier_badge": "Circuit Synthesis",
+        "multiplier_badge": "SemVer Sensitive",
         "status": "UNLOCKED"
       },
       {
@@ -31,8 +31,8 @@
         "symbol": "Gp",
         "name": "ChatGPT Wallet / Codex",
         "role_tag": "Autonomous Buyer",
-        "multiplier_badge": "Direct Payment",
-        "status": "NEW"
+        "multiplier_badge": "Direct Checkout",
+        "status": "UNLOCKED"
       }
     ]
   },
@@ -41,11 +41,11 @@
     "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • AMD)",
     "vendor": "Silicon Titans",
     "episode_badge": "EP.46 • SILICON SURVEILLANCE & SMART DISPLAY",
-    "completion_pct": 68,
+    "completion_pct": 71,
     "previously_on": "ขับเคี่ยวแย่งชิงสเปกหน่วยความจำแบนด์วิดท์สูงและประหยัดพลังงานในระดับดาต้าเซ็นเตอร์",
-    "latest_twist": "NVIDIA คอนเฟิร์มเทคนิคการแกะรอยชิปทางกายภาพเพื่อป้องกันการลักลอบค้า ฝั่ง Apple วางขาย Apple HomeView บุกสมาร์ตโฮม",
-    "power_up_multiplier": "📡 Hardware Traceability & Ambient Smart Screens",
-    "next_episode_rumor": "มาตรการตรวจสอบชิป AI ภาคบังคับในกฎหมายความมั่นคงระดับโลก",
+    "latest_twist": "NVIDIA รับปากทำระบบแกะรอยชิปตามกฎหมาย Chip Security Act ส่วน Apple วางจำหน่ายจออัจฉริยะ HomeView ทั่วโลก",
+    "power_up_multiplier": "📡 Hardware Traceability & Ambient Control",
+    "next_episode_rumor": "ข้อบังคับด้าน Firmware ล็อกพิกัดภูมิศาสตร์ใน GPU ล็อตส่งออกปี 2027",
     "element_roster": [
       {
         "number": "14",
@@ -53,14 +53,14 @@
         "name": "NVIDIA Tracked Silicon",
         "role_tag": "Geo-Fence GPU",
         "multiplier_badge": "Anti-Smuggling",
-        "status": "NEW"
+        "status": "UNLOCKED"
       },
       {
         "number": "15",
         "symbol": "Ap",
         "name": "Apple HomeView",
         "role_tag": "Ambient Display",
-        "multiplier_badge": "Home Control",
+        "multiplier_badge": "Smart Hub",
         "status": "UNLOCKED"
       },
       {
@@ -78,11 +78,11 @@
     "series_title": "Open-Weight & Local AI Rebellion",
     "vendor": "Open-Source Ecosystem",
     "episode_badge": "EP.46 • MULTI-AGENT MEMORY PROTOCOLS",
-    "completion_pct": 76,
+    "completion_pct": 78,
     "previously_on": "โมเดลเปิดเสรีไล่กวดด้านพารามิเตอร์และการรัน Inference ในเครื่องส่วนบุคคล",
-    "latest_twist": "วงการวิจัยแห่เจาะลึกระบบความจำ Multi-Granularity Memory สำหรับเอเจนต์หลายตัวทำงานร่วมกันโดยไม่ต้องเทรนโมเดลใหม่",
-    "power_up_multiplier": "🧠 Collective Agent Memory & Direct Pixel Diffusion",
-    "next_episode_rumor": "สถาปัตยกรรม Memory Pool กลางสำหรับ Local Agent Swarms",
+    "latest_twist": "งานวิจัยเปิดสถาปัตยกรรม Multi-Granularity Memory สกัดความจำเอเจนต์หลายตัวข้ามเซสชันโดยไม่ต้องเทรนโมเดลใหม่",
+    "power_up_multiplier": "🧠 Zero-Retrain Dynamic Memory Extraction",
+    "next_episode_rumor": "สแต็ก Memory Synchronization แบบ P2P ระหว่างเครื่อง Edge",
     "element_roster": [
       {
         "number": "21",
@@ -102,10 +102,10 @@
       },
       {
         "number": "23",
-        "symbol": "Ag",
-        "name": "Agentic Memory Swarm",
-        "role_tag": "Distributed Memory",
-        "multiplier_badge": "No-Retrain Sync",
+        "symbol": "Mg",
+        "name": "Multi-Granularity Memory",
+        "role_tag": "Agentic Memory",
+        "multiplier_badge": "Zero Retrain",
         "status": "NEW"
       }
     ]

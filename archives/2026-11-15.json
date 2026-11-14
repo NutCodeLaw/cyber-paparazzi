@@ -2,7 +2,7 @@
   "week_id": "2026-W46",
   "date": "2026-11-15",
   "date_formatted": "วันอาทิตย์ที่ 15 พฤศจิกายน 2569",
-  "time": "01:54 น.",
+  "time": "02:15 น.",
   "intel_stats": {
     "total_feeds": 18,
     "active_feeds": 18,
@@ -12,14 +12,14 @@
   },
   "episode_banner": {
     "season_ep": "SEASON 2026 • EP.46",
-    "episode_title": "Agentic Wallets & Silicon Wiretaps: สัปดาห์แห่งเงินตรา AI และชิปสอดแนม",
-    "heat_score": 91,
+    "episode_title": "Agentic Wallets & Silicon Wiretaps",
+    "heat_score": 93,
     "heat_label": "HIGH VOLTAGE",
-    "heat_rationale": "OpenAI ติดอาวุธให้ Agent ถือกระเป๋าตังค์จ่ายเงินเองได้ ขณะที่ NVIDIA ซุ่มยืนยันระบบติดตามชิปต้านลักลอบค้าข้ามชาติ",
+    "heat_rationale": "เอเจนต์เริ่มถือกระเป๋าเงินเองพร้อมซื้อของจริง ขณะที่ชิปประมวลผลถูกดึงเข้าสู่เกมภูมิรัฐศาสตร์ด้วยระบบระบุพิกัดแบบฝังชิป",
     "wiretap_ticker": [
-      "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent กดจ่ายเงินได้ทันที",
-      "NVIDIA ยอมรับแอบมีโซลูชันฝังระบบแกะรอยชิปต้านการลักลอบส่งออก",
-      "Grok Build ทำพิษ ข้อมูลโปรเจกต์หลุดเกลื่อนกว่า 35,000 แอปพลิเคชัน"
+      "OpenAI ปล่อย ChatGPT Wallet เปิดทาง AI Agent ชำระเงินจริงภายใต้การอนุมัติของผู้ใช้",
+      "Apple เปิดขาย Apple HomeView จอควบคุมบ้านอัจฉริยะและศูนย์รวมความบันเทิงอย่างเป็นทางการ",
+      "NVIDIA ยอมรับทางเทคนิคในสภาคองเกรส สามารถฝังระบบแกะรอยฮาร์ดแวร์ต้านการลักลอบค้าชิปได้"
     ]
   },
   "tech_series_sagas": [
@@ -28,26 +28,26 @@
       "series_title": "The Frontier AI Model Race (Google • OpenAI • Anthropic)",
       "vendor": "Multi-Lab Frontier",
       "episode_badge": "EP.46 • FINTECH AGENT ESCALATION",
-      "completion_pct": 72,
+      "completion_pct": 74,
       "previously_on": "สมรภูมิโมเดลเน้นแข่ง Benchmark การคิดวิเคราะห์และแก้โค้ดแบบก้าวกระโดด",
-      "latest_twist": "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent กดซื้อของและทำธุรกรรมได้เองอย่างเป็นทางการ ส่วน Anthropic เตรียมโรดโชว์ IPO",
-      "power_up_multiplier": "💳 Agentic Autonomous Commerce + IPO Valuation",
-      "next_episode_rumor": "จับตาระบบความปลอดภัยขั้นสูงสุดในการป้องกันคลังเงินของ AI Agents",
+      "latest_twist": "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent ใน ChatGPT Work และ Codex ทำธุรกรรมซื้อของได้จริง พร้อมระบบคุ้มครองบัตร",
+      "power_up_multiplier": "💳 Agentic Direct Payment + 50% Dev Output",
+      "next_episode_rumor": "การทดสอบระบบอนุมัติธุรกรรมแบบ Real-time Multi-agent ในสเกลองค์กร",
       "element_roster": [
         {
           "number": "01",
           "symbol": "Gm",
-          "name": "Gemini (Adobe Hybrid)",
-          "role_tag": "Creative Productivity",
-          "multiplier_badge": "Adobe Core",
-          "status": "UNLOCKED"
+          "name": "Gemini 4 Hydrogen",
+          "role_tag": "Search Core",
+          "multiplier_badge": "Search Native",
+          "status": "NEW"
         },
         {
           "number": "02",
           "symbol": "Cl",
           "name": "Claude Sonnet",
           "role_tag": "Hardware Designer",
-          "multiplier_badge": "Circuit Synthesis",
+          "multiplier_badge": "SemVer Sensitive",
           "status": "UNLOCKED"
         },
         {
@@ -55,8 +55,8 @@
           "symbol": "Gp",
           "name": "ChatGPT Wallet / Codex",
           "role_tag": "Autonomous Buyer",
-          "multiplier_badge": "Direct Payment",
-          "status": "NEW"
+          "multiplier_badge": "Direct Checkout",
+          "status": "UNLOCKED"
         }
       ]
     },
@@ -65,11 +65,11 @@
       "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • AMD)",
       "vendor": "Silicon Titans",
       "episode_badge": "EP.46 • SILICON SURVEILLANCE & SMART DISPLAY",
-      "completion_pct": 68,
+      "completion_pct": 71,
       "previously_on": "ขับเคี่ยวแย่งชิงสเปกหน่วยความจำแบนด์วิดท์สูงและประหยัดพลังงานในระดับดาต้าเซ็นเตอร์",
-      "latest_twist": "NVIDIA คอนเฟิร์มเทคนิคการแกะรอยชิปทางกายภาพเพื่อป้องกันการลักลอบค้า ฝั่ง Apple วางขาย Apple HomeView บุกสมาร์ตโฮม",
-      "power_up_multiplier": "📡 Hardware Traceability & Ambient Smart Screens",
-      "next_episode_rumor": "มาตรการตรวจสอบชิป AI ภาคบังคับในกฎหมายความมั่นคงระดับโลก",
+      "latest_twist": "NVIDIA รับปากทำระบบแกะรอยชิปตามกฎหมาย Chip Security Act ส่วน Apple วางจำหน่ายจออัจฉริยะ HomeView ทั่วโลก",
+      "power_up_multiplier": "📡 Hardware Traceability & Ambient Control",
+      "next_episode_rumor": "ข้อบังคับด้าน Firmware ล็อกพิกัดภูมิศาสตร์ใน GPU ล็อตส่งออกปี 2027",
       "element_roster": [
         {
           "number": "14",
@@ -77,14 +77,14 @@
           "name": "NVIDIA Tracked Silicon",
           "role_tag": "Geo-Fence GPU",
           "multiplier_badge": "Anti-Smuggling",
-          "status": "NEW"
+          "status": "UNLOCKED"
         },
         {
           "number": "15",
           "symbol": "Ap",
           "name": "Apple HomeView",
           "role_tag": "Ambient Display",
-          "multiplier_badge": "Home Control",
+          "multiplier_badge": "Smart Hub",
           "status": "UNLOCKED"
         },
         {
@@ -102,11 +102,11 @@
       "series_title": "Open-Weight & Local AI Rebellion",
       "vendor": "Open-Source Ecosystem",
       "episode_badge": "EP.46 • MULTI-AGENT MEMORY PROTOCOLS",
-      "completion_pct": 76,
+      "completion_pct": 78,
       "previously_on": "โมเดลเปิดเสรีไล่กวดด้านพารามิเตอร์และการรัน Inference ในเครื่องส่วนบุคคล",
-      "latest_twist": "วงการวิจัยแห่เจาะลึกระบบความจำ Multi-Granularity Memory สำหรับเอเจนต์หลายตัวทำงานร่วมกันโดยไม่ต้องเทรนโมเดลใหม่",
-      "power_up_multiplier": "🧠 Collective Agent Memory & Direct Pixel Diffusion",
-      "next_episode_rumor": "สถาปัตยกรรม Memory Pool กลางสำหรับ Local Agent Swarms",
+      "latest_twist": "งานวิจัยเปิดสถาปัตยกรรม Multi-Granularity Memory สกัดความจำเอเจนต์หลายตัวข้ามเซสชันโดยไม่ต้องเทรนโมเดลใหม่",
+      "power_up_multiplier": "🧠 Zero-Retrain Dynamic Memory Extraction",
+      "next_episode_rumor": "สแต็ก Memory Synchronization แบบ P2P ระหว่างเครื่อง Edge",
       "element_roster": [
         {
           "number": "21",
@@ -126,50 +126,50 @@
         },
         {
           "number": "23",
-          "symbol": "Ag",
-          "name": "Agentic Memory Swarm",
-          "role_tag": "Distributed Memory",
-          "multiplier_badge": "No-Retrain Sync",
+          "symbol": "Mg",
+          "name": "Multi-Granularity Memory",
+          "role_tag": "Agentic Memory",
+          "multiplier_badge": "Zero Retrain",
           "status": "NEW"
         }
       ]
     }
   ],
   "weekly_showdown": {
-    "title": "ศึกเอเจนต์สายปฏิบัติการ: ChatGPT Wallet (OpenAI) vs Grok Build (xAI)",
+    "title": "ศึกเปิดกระเป๋าเงิน AI ปะทะ การตัดสินใจมัลติโมดัล: ChatGPT Wallet vs Gemini Decisions",
     "fighter_left": {
-      "name": "ChatGPT Wallet / Work Agent",
+      "name": "ChatGPT Wallet Ecosystem",
       "vendor": "OpenAI",
       "avatar_emoji": "💳",
-      "total_score": 87,
-      "special_move": "Card-Guarded Direct Checkout (เอเจนต์รูดซื้อของพร้อมระบบป้องกันสิทธิ์)"
+      "total_score": 89,
+      "special_move": "Autonomous Card Checkout"
     },
     "fighter_right": {
-      "name": "Grok Build Agent",
-      "vendor": "xAI",
-      "avatar_emoji": "🚀",
-      "total_score": 64,
-      "special_move": "Rapid Code Deployment (ปล่อยบิลด์ฉับไวแต่รั่ว 35k โครงการ)"
+      "name": "Gemini Decisions & Hydrogen",
+      "vendor": "Google",
+      "avatar_emoji": "⚡",
+      "total_score": 87,
+      "special_move": "Calibrated Multimodal Reasoning"
     },
-    "winner_verdict": "OpenAI ชนะขาดลอยในเรื่องการวางเกราะความปลอดภัยและสถาปัตยกรรมการอนุมัติธุรกรรม ในขณะที่ Grok Build ประสบภัยข้อมูลหลุดครั้งใหญ่",
+    "winner_verdict": "OpenAI คว้าชัยเฉือนคมด้วยการเปลี่ยน Agent จากแค่ผู้แนะนำโค้ดให้กลายเป็นผู้ถือกระเป๋าเงินซื้อของจริงสำเร็จเป็นรายแรก",
     "rounds": [
       {
-        "metric_name": "ยกที่ 1: มาตรการรักษาความปลอดภัย (Security & Authorization)",
-        "left_pct": 75,
-        "right_pct": 25,
-        "round_note": "Grok Build ทำคอนฟิกหลุดเปิดกว้าง 35,000 แอป ขณะที่ OpenAI บังคับยืนยันตัวตนก่อนจ่ายเงิน"
+        "metric_name": "ยกที่ 1: การนำไปใช้งานจริง (Real-World Utility)",
+        "left_pct": 58,
+        "right_pct": 42,
+        "round_note": "ChatGPT Wallet ทำธุรกรรมจริงสำเร็จทันที ขณะที่ Gemini เน้นตัดสินใจเชิงสถิติ"
       },
       {
-        "metric_name": "ยกที่ 2: ความสามารถในการปิดจ็อบจริง (Real-World Utility)",
-        "left_pct": 65,
-        "right_pct": 35,
-        "round_note": "ChatGPT Wallet ขยายสู่ระบบซื้อขายจริง ช่วยให้เวิร์กโฟลว์ของ Agent จบงานได้แบบ End-to-End"
+        "metric_name": "ยกที่ 2: ความลึกในการผสานระบบ (Ecosystem Integration)",
+        "left_pct": 47,
+        "right_pct": 53,
+        "round_note": "Google เหนือกว่าจากการผสาน Adobe เข้ากับ Google Workspace และ Search โดยตรง"
       },
       {
-        "metric_name": "ยกที่ 3: ความพร้อมในการใช้งานระดับองค์กร (Enterprise Readiness)",
-        "left_pct": 70,
-        "right_pct": 30,
-        "round_note": "องค์กรขยาดประเด็นข้อมูลรั่วไหลสู่สาธารณะของ xAI ทำให้ OpenAI ได้แต้มต่อในกลุ่มลูกค้าธุรกิจ"
+        "metric_name": "ยกที่ 3: ระบบความปลอดภัยและการควบคุม (Safety Guardrails)",
+        "left_pct": 52,
+        "right_pct": 48,
+        "round_note": "OpenAI บังคับ User Approval ก่อนตัดเงิน พร้อมระบบป้องกันบัตรเครดิตดั้งเดิม"
       }
     ]
   },
@@ -179,32 +179,32 @@
       "icon": "🟢",
       "power_score": 90,
       "weekly_delta": 4,
-      "stance_badge": "SURGING",
-      "signature_move": "เปิด ChatGPT Wallet ลุยระบบการเงิน และดันเคสองค์กรเร่งผลงานเท่าตัว"
+      "stance_badge": "STRIKING",
+      "signature_move": "ส่ง ChatGPT Wallet บุกตลาด Agentic Commerce และทุ่มงบ 2 ล้านดอลลาร์วิจัยความปลอดภัยเด็ก"
     },
     {
       "faction": "Google DeepMind",
       "icon": "🔵",
-      "power_score": 88,
+      "power_score": 89,
       "weekly_delta": 3,
-      "stance_badge": "STRIKING",
-      "signature_move": "ผนึกเครื่องมือ Adobe AI สู่ Gemini และ Google Drive ไร้รอยต่อ"
+      "stance_badge": "SURGING",
+      "signature_move": "ยกเครื่อง Google Search ด้วย Gemini 4 Hydrogen และผนึกกำลังเครื่องมือ Adobe"
     },
     {
       "faction": "Anthropic",
       "icon": "🟠",
-      "power_score": 87,
-      "weekly_delta": 2,
-      "stance_badge": "SURGING",
-      "signature_move": "ดัน Claude ออกแบบแผงวงจรฮาร์ดแวร์ครบวงจร พร้อมเดินหน้าโรดโชว์ IPO"
+      "power_score": 85,
+      "weekly_delta": 1,
+      "stance_badge": "DEFENDING",
+      "signature_move": "Claude Sonnet ถูกทดสอบความฉลาดด้าน SemVer พบความแม่นยำสูงเมื่อเลขเวอร์ชันถูกต้อง"
     },
     {
       "faction": "Meta & Open-Weight",
       "icon": "🦙",
-      "power_score": 83,
+      "power_score": 84,
       "weekly_delta": 3,
-      "stance_badge": "STRIKING",
-      "signature_move": "ชูเฟรมเวิร์ก Multi-Agent Memory และงานวิจัยตัดตัวกลาง VAE Video"
+      "stance_badge": "SURGING",
+      "signature_move": "ชุมชนโอเพนซอร์สผลักดันสถาปัตยกรรม Multi-Granularity Memory และ Pixel Space Video"
     },
     {
       "faction": "NVIDIA & Silicon",
@@ -212,132 +212,132 @@
       "power_score": 93,
       "weekly_delta": 2,
       "stance_badge": "DOMINATING",
-      "signature_move": "ซุ่มพัฒนาฮาร์ดแวร์ Tracking ตรวจจับและสกัดกั้นการลักลอบนำเข้าชิป"
+      "signature_move": "ส่ง OpenShell สู่ Kubernetes ดันหุ่นยนต์ใน CoRL และยอมรับความเป็นไปได้ในการแทร็กชิป"
     },
     {
       "faction": "xAI & DeepSeek",
       "icon": "🟣",
-      "power_score": 75,
-      "weekly_delta": -5,
-      "stance_badge": "DEFENDING",
-      "signature_move": "ตั้งรับวิกฤตความปลอดภัยหลัง Grok Build ทำซอร์สโค้ดและข้อมูลสำคัญลูกค้ารั่วไหล"
+      "power_score": 79,
+      "weekly_delta": -2,
+      "stance_badge": "CHALLENGING",
+      "signature_move": "สะดุดวิกฤตความปลอดภัยหลัง Grok Build ปล่อยข้อมูลแอปหลุดกว่า 35,000 แห่ง"
     }
   ],
   "top_scoops": [
     {
       "track": "ai_frontier",
-      "headline": "OpenAI ส่ง ChatGPT Wallet ปล่อยเอเจนต์ช็อปปิ้งแทนมนุษย์แบบมีไฟเขียว",
-      "paparazzi_hook": "สายสืบรายงาน OpenAI เตรียมเปลี่ยนสมรภูมิ AI จากแค่พิมพ์ตอบเป็นการผลาญงบ เมื่อ Agent ใน ChatGPT Work และ Codex ได้กระเป๋าตังค์ใบใหม่ กดสั่งซื้อของได้ตามใจสั่ง!",
-      "engineer_spec_summary": "สถาปัตยกรรม ChatGPT Wallet อนุญาตให้ AI Agent สั่งซื้อสินค้าและบริการภายใต้การอนุมัติของผู้ใช้ พร้อมระบบ Card Protections เชื่อมโยงกับบัตรเครดิตเดิมอย่างปลอดภัย",
+      "headline": "OpenAI จุดชนวน Fintech ยุคใหม่: ส่ง ChatGPT Wallet ให้ AI กดซื้อของแทนคน",
+      "paparazzi_hook": "เปิดประตูด่านสุดท้ายให้ AI ล้วงกระเป๋าเงินได้แล้ว OpenAI เปิดตัวฟีเจอร์ Wallet ให้เอเจนต์กดจ่ายเงินซื้อสินค้าแทนมนุษย์แบบเสร็จสรรพ โดยต้องกดยืนยันผ่านหน้าจอเพื่อความปลอดภัย",
+      "engineer_spec_summary": "ระบบเชื่อมต่อกับ ChatGPT Work, Codex และ dots เพื่อทำคำสั่งซื้อผ่านระบบคุ้มครองบัตรเครดิตเดิม ป้องกัน Agent ซื้อสินค้าโดยพลการด้วย Flow บังคับ User Approval ทุกธุรกรรม",
       "spec_chips": [
-        "⚡ Agentic Checkout",
-        "💳 Card Protections",
-        "🎯 ChatGPT Work & Codex"
+        "💳 Agentic Checkout",
+        "🔒 User-in-the-Loop",
+        "🏢 Enterprise & Work Tier"
       ],
-      "hype_score": 93,
-      "real_impact_score": 91,
+      "hype_score": 95,
+      "real_impact_score": 92,
       "spy_verdict": "GAME CHANGER",
       "source_name": "OpenAI Newsroom",
       "source_url": "https://openai.com/index/introducing-chatgpt-wallet"
     },
     {
-      "track": "ai_frontier",
-      "headline": "Google จับมือ Adobe ยกทัพครีเอทีฟบุก Gemini และ Google Workspace",
-      "paparazzi_hook": "บิ๊กดีลสั่นสะเทือนวงการกราฟิก เมื่อคลังแสง Adobe พุ่งเข้าสิงใน Google Drive ให้แก้ไข PDF และเรียกใช้ AI Adobe ผ่าน Gemini ได้โดยตรง!",
-      "engineer_spec_summary": "การเชื่อมโยงระบบนิเวศระหว่าง Google Cloud, Drive และ Adobe Creative Tools เพิ่มความสามารถ Native PDF Editing และการประมวลผลงานออกแบบด้วย AI ภายในหน้าต่างเดียว",
-      "spec_chips": [
-        "⚡ Direct PDF Edit",
-        "🎨 Adobe AI in Gemini",
-        "🎯 Drive Integration"
-      ],
-      "hype_score": 85,
-      "real_impact_score": 88,
-      "spy_verdict": "SOLID UPGRADE",
-      "source_name": "Google DeepMind Blog",
-      "source_url": "https://blog.google/company-news/inside-google/company-announcements/adobe-google-partnership-integration/"
-    },
-    {
       "track": "hardware_silicon",
-      "headline": "Apple HomeView เปิดขายแล้ว ฮาร์ดแวร์จอกลางคุมบ้านและบันเทิงครบวงจร",
-      "paparazzi_hook": "ไม่ต้องลือกันอีกต่อไป Apple วางจำหน่าย Apple HomeView อย่างเป็นทางการ หวังยึดพื้นที่ห้องนั่งเล่นเป็นศูนย์กลางสมาร์ตโฮมยุคใหม่!",
-      "engineer_spec_summary": "Apple HomeView วางจำหน่ายทันที ทำหน้าที่เป็นหน้าจอควบคุมระบบนิเวศ Smart Home, ติดต่อสื่อสาร และรับชมคอนเทนต์เพื่อประสบการณ์ใช้งานแบบรวมศูนย์",
+      "headline": "Apple HomeView วางขายแล้ว: ฮาร์ดแวร์คุมบ้านและศูนย์รวมความบันเทิงรุ่นล่าสุด",
+      "paparazzi_hook": "สิ้นสุดการรอคอยของสาวก Apple ส่งจออัจฉริยะ HomeView ขึ้นชั้นวางขายอย่างเป็นทางการ หวังยึดพื้นที่ห้องนั่งเล่นและจุดศูนย์กลางของบ้านด้วยดีไซน์และฟีเจอร์สุดมินิมอล",
+      "engineer_spec_summary": "อุปกรณ์รวบรวมศูนย์ควบคุมสมาร์ตโฮม การสตรีมความบันเทิง และการสื่อสารไว้ในหน้าจอเดียว ผสานระบบปฏิบัติการสำหรับบ้านและเชื่อมต่อกับ Apple Ecosystem ได้อย่างสมบูรณ์",
       "spec_chips": [
-        "⚡ Official Release",
-        "🏠 Smart Home Hub",
-        "🎯 Ambient Interface"
+        "📱 Smart Home Hub",
+        "🎬 Ambient Media",
+        "🛒 Global Retail Ready"
       ],
-      "hype_score": 86,
-      "real_impact_score": 84,
+      "hype_score": 88,
+      "real_impact_score": 85,
       "spy_verdict": "SOLID UPGRADE",
       "source_name": "Apple Newsroom",
       "source_url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/"
     },
     {
       "track": "software_devtools",
-      "headline": "หายนะความปลอดภัย Grok Build ปล่อยไก่ทำข้อมูลหลุดทะลักกว่า 35,000 แอป",
-      "paparazzi_hook": "นักวิจัยด้านความปลอดภัยตาไวแฉยับ เครื่องมือเขียนโค้ดอัตโนมัติ Grok Build เปิดเผยข้อมูลความลับและซอร์สโค้ดของลูกค้ารวมถึงฝั่ง SpaceXSI โชว์หราบนอินเทอร์เน็ต!",
-      "engineer_spec_summary": "เกิดช่องโหว่การกำหนดค่าสิทธิ์การเข้าถึงใน Grok Build Coding Agent ส่งผลให้ฐานข้อมูลและ Environment ของแอปพลิเคชันกว่า 35,000 โครงการตกเป็นเป้าสายตาของสาธารณะ",
+      "headline": "หายนะโค้ดดิ้งเอเจนต์: Grok Build ทำข้อมูลหลุดกระจุยกว่า 35,000 แอป",
+      "paparazzi_hook": "ฝันร้ายของความปลอดภัยสายเดฟ เมื่อระบบสร้างแอปอัตโนมัติ Grok Build เปิดประตูบ้านทิ้งไว้ ปล่อยให้บุคคลภายนอกเข้าถึงข้อมูลภายในและโค้ดของแอปพลิเคชันกว่า 35,000 รายการ",
+      "engineer_spec_summary": "นักวิจัยด้านความปลอดภัยตรวจพบช่องโหว่การตั้งค่าสิทธิ์ที่หละหลวมบนเซิร์ฟเวอร์ Grok Build ส่งผลให้ข้อมูลที่เป็นความลับรวมถึงโครงการที่เกี่ยวข้องกับ SpaceXSI หลุดสู่สาธารณะ",
       "spec_chips": [
-        "⚡ 35,000 Apps Exposed",
-        "🔓 Public Misconfiguration",
-        "🎯 Confidential Leak"
+        "🚨 35,000 Exposed Apps",
+        "🔓 Misconfigured ACLs",
+        "⚠️ Credential Leak"
       ],
       "hype_score": 89,
       "real_impact_score": 94,
-      "spy_verdict": "GAME CHANGER",
+      "spy_verdict": "WATCHLIST",
       "source_name": "Ars Technica",
       "source_url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
     },
     {
-      "track": "local_open_ai",
-      "headline": "ทลายกำแพงความจำ Multi-Granularity Memory สปีดเอเจนต์ฉลาดขึ้นโดยไม่ต้องเทรนใหม่",
-      "paparazzi_hook": "สืบจากกระดาษวิจัยเด็ด Hugging Face เจาะวิธีดึงความทรงจำแบบหลายระดับชั้น ช่วยให้ AI Agent หลายตัวเรียนรู้ประสบการณ์ข้ามร่างกันได้แบบเนียนกริบ!",
-      "engineer_spec_summary": "เฟรมเวิร์ก Multi-Granularity Memory Extraction อนุญาตให้ระบบ Self-evolving และ Group-evolving agents แชร์บทเรียน ทักษะ และโค้ดควบคุมข้ามเอเจนต์โดยไม่ต้อง Fine-tune โมเดลพื้นฐาน",
+      "track": "deep_tech",
+      "headline": "NVIDIA แอบรับปากสภาสหรัฐฯ: เทคนิคแกะรอยฮาร์ดแวร์ป้องกันลักลอบส่งออกทำได้จริง",
+      "paparazzi_hook": "เบื้องหน้าอ้างว่ายากแต่ลับหลังพยักหน้า ตัวแทน NVIDIA ยืนยันกับสมาชิกรัฐสภาสหรัฐฯ ว่ามาตรการตรวจสอบและติดตามชิปทางกายภาพตาม Chip Security Act เป็นไปได้ในเชิงเทคนิค",
+      "engineer_spec_summary": "ระบบติดตามชิปจะใช้การตรวจสอบระดับซิลิคอนและฮาร์ดแวร์เพื่อยืนยันพิกัดการใช้งานจริง ป้องกันการลักลอบส่งออก GPU ขั้นสูงไปยังดินแดนที่ถูกคว่ำบาตรอย่างมีประสิทธิภาพ",
       "spec_chips": [
-        "⚡ Zero Retraining",
-        "🧠 Multi-Agent Memory",
-        "🎯 Experience Sharing"
+        "🛰️ Silicon Hardware Tracking",
+        "📜 Chip Security Act",
+        "⚖️ Export Compliance"
       ],
-      "hype_score": 81,
-      "real_impact_score": 87,
+      "hype_score": 84,
+      "real_impact_score": 91,
+      "spy_verdict": "GAME CHANGER",
+      "source_name": "MIT Technology Review",
+      "source_url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+    },
+    {
+      "track": "local_open_ai",
+      "headline": "ทลายกำแพงความจำ AI: วิจัยใหม่สกัด Multi-Granularity Memory ข้ามเอเจนต์ไม่ต้องเทรนซ้ำ",
+      "paparazzi_hook": "ไม่ต้องเสียเงินเทรนโมเดลใหม่ซ้ำๆ นักวิจัยเปิดเปเปอร์แก้โจทย์ใหญ่ของ Agent Swarm ด้วยการสกัดความจำแบบหลายระดับชั้น ทำให้เอเจนต์หลายตัวจดจำประสบการณ์ร่วมกันได้ทันที",
+      "engineer_spec_summary": "สถาปัตยกรรม Self-evolving และ Group-evolving ช่วยดึงประสบการณ์ ทักษะ และโค้ดควบคุมจากอินเทอร์แอ็กชัน มาแปลงเป็นชุดความจำแบบหลายระดับความละเอียดโดยคงโมเดลหลักไว้คงที่",
+      "spec_chips": [
+        "🧠 Zero Base-LLM Retraining",
+        "🤝 Multi-Agent Memory Extraction",
+        "⚡ Dynamic Skill Update"
+      ],
+      "hype_score": 83,
+      "real_impact_score": 88,
       "spy_verdict": "SOLID UPGRADE",
       "source_name": "Hugging Face Papers",
       "source_url": "https://huggingface.co/papers/2611.10439"
     },
     {
-      "track": "deep_tech",
-      "headline": "NVIDIA แอบรับปากทำได้ ระบบแกะรอยชิปต้านลักลอบส่งออก สวนทางคำคัดค้านในอดีต",
-      "paparazzi_hook": "เอกสารลับเปิดเผย ตัวแทน NVIDIA เข้าชี้แจงกับสภาคองเกรส ยืนยันว่าทางเทคนิคสามารถฝังระบบระบุและติดตามชิป AI เพื่อสกัดกั้นการลักลอบค้าไปยังชาติคู่แข่งได้จริง!",
-      "engineer_spec_summary": "NVIDIA ยืนยันความเป็นไปได้เชิงเทคนิคต่อสมาชิกสภา Bill Foster ในการใส่กลไกด้านความปลอดภัยและการตรวจสอบสถานที่ตั้งของฮาร์ดแวร์เพื่อรองรับข้อกำหนดตามร่าง Chip Security Act",
+      "track": "ai_frontier",
+      "headline": "Google Search แปลงร่าง: อัดขุมพลัง Gemini 4 Hydrogen สู่ระบบค้นหาระดับโลก",
+      "paparazzi_hook": "กูเกิลยกเครื่องหน้าค้นหาครั้งใหญ่ ปล่อย Gemini 4 Hydrogen ขับเคลื่อนผลการค้นหาแบบอินเทอร์แอ็กทีฟ ให้ข้อมูลแม่นยำและตอบสนองหลายมิติแบบเรียลไทม์",
+      "engineer_spec_summary": "การอัปเกรดนำโมเดลตระกูล Hydrogen มาเป็นแกนกลางในการประมวลผลคำค้นหาที่ซับซ้อน รองรับมัลติโมดัล และแสดงผลในรูปแบบการ์ดแบบไดนามิกบนหน้าเว็บโดยตรง",
       "spec_chips": [
-        "⚡ Chip Geo-Tracking",
-        "🛡️ Anti-Smuggling",
-        "🎯 Chip Security Act"
+        "⚡ Gemini 4 Hydrogen Core",
+        "🔍 Native Search Integration",
+        "📊 Dynamic Interactive Cards"
       ],
-      "hype_score": 92,
-      "real_impact_score": 95,
-      "spy_verdict": "GAME CHANGER",
-      "source_name": "MIT Technology Review",
-      "source_url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
+      "hype_score": 91,
+      "real_impact_score": 90,
+      "spy_verdict": "SOLID UPGRADE",
+      "source_name": "Google AI Blog",
+      "source_url": "https://blog.google/products-and-platforms/products/search/gemini-4-hydrogen-search-upgrade/"
     }
   ],
   "action_compass": {
     "switch_now": [
       {
-        "item": "VMware vSphere Express",
-        "reason": "ทางเลือกใหม่ของสายเวอร์ชวลไลเซชันสำหรับฮาร์ดแวร์ระดับล่างถึงกลาง รองรับสูงสุดถึง 128 คอร์ ตอบโจทย์องค์กรประหยัดงบ"
+        "item": "ChatGPT Wallet สำหรับสาย Dev & Ops อัตโนมัติ",
+        "reason": "ช่วยลดคอขวดในการซื้อ API เครดิตคลาวด์ หรือทรัพยากร dev ด้วยการให้อนุมัติผ่านเอเจนต์ได้ทันที"
       }
     ],
     "wait_next_ep": [
       {
-        "item": "Tesla Cybercab สำหรับบุคคลทั่วไป",
-        "reason": "แม้จะเปิดให้จองเป็นการส่วนตัว แต่ยังพ่วงสัญญาบริการรายเดือน 299 ดอลลาร์และยังมีข้อจำกัดทางกฎหมายไร้พวงมาลัย"
+        "item": "Grok Build Coding Agent",
+        "reason": "ควรรอจนกว่าทีมงานจะออกแพตช์แก้ไขช่องโหว่ Access Control ของทั้ง 35,000 แอปพลิเคชันอย่างเป็นทางการ"
       }
     ],
     "skip_hype_trap": [
       {
-        "item": "การปล่อยให้ Grok Build จัดการงานโปรดักชัน",
-        "reason": "เสี่ยงต่อการรั่วไหลของข้อมูลความลับ หลังพบคดีตัวอย่างแอปพลิเคชันหลุดสู่สาธารณะกว่าสามหมื่นห้าพันแอป"
+        "item": "การเทรนโมเดลใหม่เพื่อปรับปรุงความจำของ Agent",
+        "reason": "งานวิจัยล่าสุดพิสูจน์แล้วว่าใช้ระบบ Multi-Granularity Memory สกัดความจำภายนอกได้โดยไม่ต้องเสียค่าคอมพิวต์เทรนใหม่"
       }
     ]
   },
@@ -346,88 +346,96 @@
       "name": "Apple HomeView",
       "category": "Hardware",
       "vendor": "Apple",
-      "killer_spec": "จออัจฉริยะคุมระบบสมาร์ตโฮมและความบันเทิงวางจำหน่ายทันที",
-      "availability": "Available Now",
+      "killer_spec": "จออัจฉริยะควบคุมบ้านและความบันเทิงครบวงจร",
+      "availability": "Available Today (Retail)",
       "source_url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/"
     },
     {
       "name": "ChatGPT Wallet",
-      "category": "Software",
+      "category": "AI Model",
       "vendor": "OpenAI",
-      "killer_spec": "ระบบชำระเงินอัตโนมัติสำหรับ AI Agent ภายใต้สิทธิ์คุ้มครองบัตรเดิม",
-      "availability": "Rollout / Beta",
+      "killer_spec": "ระบบกระเป๋าเงินสำหรับ Agent ซื้อของโดยต้องได้รับการอนุมัติ",
+      "availability": "Rollout (Work & Codex)",
       "source_url": "https://openai.com/index/introducing-chatgpt-wallet"
     },
     {
-      "name": "vSphere Express",
+      "name": "Gemini Decisions API",
+      "category": "Software",
+      "vendor": "Google",
+      "killer_spec": "API ช่วยตัดสินใจมัลติโมดัลความเร็วสูงที่มีการปรับเทียบค่าความน่าจะเป็น",
+      "availability": "API Preview",
+      "source_url": "https://blog.google/innovation-and-ai/technology/developers-tools/gemini-decisions-api/"
+    },
+    {
+      "name": "VMware vSphere Express",
       "category": "Software",
       "vendor": "VMware",
-      "killer_spec": "ระบบ Virtualization คล่องตัวสูง รองรับสเกลสูงสุด 128 Cores",
-      "availability": "Official Release",
+      "killer_spec": "เวอร์ชวลไลเซชันสำหรับระบบขนาดเล็กที่รองรับสูงสุด 128 คอร์",
+      "availability": "General Availability",
       "source_url": "https://arstechnica.com/information-technology/2026/11/vmware-releases-vsphere-express-for-virtualization-on-up-to-128-cores/"
     },
     {
-      "name": "Back to Pixels Video Diffusion",
-      "category": "AI Model",
-      "vendor": "Open-Source Research",
-      "killer_spec": "ยกเลิกการบีบอัด Latent Space หันมาสร้างวิดีโอตรงสู่ Pixel Space คมชัดสูง",
-      "availability": "Preprint / Open Research",
-      "source_url": "https://huggingface.co/papers/2611.17336"
+      "name": "Tabletop Labs Experiment",
+      "category": "Software",
+      "vendor": "Google",
+      "killer_spec": "พื้นที่ทำงานร่วมกันเชิงโต้ตอบสำหรับวางแผนและทำกิจกรรมกลุ่ม",
+      "availability": "Waitlist",
+      "source_url": "https://blog.google/innovation-and-ai/models-and-research/google-labs/tabletop/"
     }
   ],
   "track_briefs": [
     {
       "track": "ai_frontier",
-      "tag": "#ChatGPTWallet",
-      "headline": "OpenAI เปิดตัว ChatGPT Wallet สู่การจ่ายเงินอัตโนมัติ",
-      "punchline": "ปลดล็อกให้ Agent ซื้อสินค้าแทนมนุษย์แบบมีระบบอนุมัติเข้มงวด",
+      "tag": "#AgenticWallet",
+      "headline": "OpenAI ให้ Agent ถือบัตรเครดิต",
+      "punchline": "ChatGPT Wallet เปิดศักราชใหม่ให้เอเจนต์กดซื้อของและบริการแทนผู้ใช้แบบมีระบบกดยืนยัน",
       "source_url": "https://openai.com/index/introducing-chatgpt-wallet"
     },
     {
       "track": "hardware_silicon",
-      "tag": "#HomeViewDrop",
-      "headline": "Apple HomeView วางจำหน่ายแล้วอย่างเป็นทางการ",
-      "punchline": "ศูนย์กลางบ้านอัจฉริยะดีไซน์หรูพร้อมส่งตรงถึงมือลูกค้าทันที",
+      "tag": "#AppleHomeView",
+      "headline": "Apple บุกหน้าจอห้องนั่งเล่นด้วย HomeView",
+      "punchline": "พร้อมวางขายทั่วโลกแล้ว อุปกรณ์ศูนย์กลางควบคุมบ้านและเสพสื่อบันเทิงในเครื่องเดียว",
       "source_url": "https://www.apple.com/newsroom/2026/11/apple-homeview-available-today/"
     },
     {
       "track": "software_devtools",
-      "tag": "#GrokBuildLeak",
-      "headline": "Grok Build ทำความลับและซอร์สโค้ดหลุดกว่า 35,000 โครงการ",
-      "punchline": "บทเรียนราคาแพงของวงการเอเจนต์เขียนโค้ดที่ขาดการกั้นสิทธิ์",
+      "tag": "#GrokLeak",
+      "headline": "Grok Build ปล่อยรั่ว 35,000 แอป",
+      "punchline": "ช่องโหว่ความปลอดภัยส่งผลให้โค้ดและข้อมูลสำคัญของหลายหน่วยงานรวมถึงบริษัทพันธมิตรหลุดสู่ภายนอก",
       "source_url": "https://arstechnica.com/security/2026/11/grok-build-coding-agent-leaks-oodles-of-confidential-info-some-belonging-to-spacexsi/"
     },
     {
       "track": "local_open_ai",
       "tag": "#AgentMemory",
-      "headline": "วิจัยเผยระบบส่งต่อความจำเอเจนต์โดยไม่ต้องเทรนซ้ำ",
-      "punchline": "เปิดทางให้ Swarm Agent เรียนรู้จากประสบการณ์ร่วมกันอย่างรวดเร็ว",
+      "headline": "สถาปัตยกรรมความจำเอเจนต์แบบไม่ต้องเทรนใหม่",
+      "punchline": "Multi-Granularity Memory เปิดทางให้กลุ่มเอเจนต์แบ่งปันความรู้และบทเรียนข้ามตัวได้อย่างต่อเนื่อง",
       "source_url": "https://huggingface.co/papers/2611.10439"
     },
     {
       "track": "deep_tech",
-      "tag": "#NvidiaTracking",
-      "headline": "NVIDIA แอบรับปากระบบแกะรอยตำแหน่งชิปสู้ภัยลักลอบค้า",
-      "punchline": "มาตรการความมั่นคงระดับฮาร์ดแวร์ที่พร้อมบังคับใช้จริงในอนาคต",
+      "tag": "#ChipTracking",
+      "headline": "NVIDIA รับมือระเบียบ Chip Security Act",
+      "punchline": "การตรวจสอบพิกัดชิป GPU ระดับฮาร์ดแวร์เพื่อสกัดการลักลอบส่งออกเป็นไปได้จริงทางวิศวกรรม",
       "source_url": "https://www.technologyreview.com/2026/11/12/1148483/nvidia-chip-tracking/"
     }
   ],
   "next_week_watchlist": [
     {
       "window": "สัปดาห์หน้า",
-      "event": "การทดสอบระบบตัดเงินผ่าน ChatGPT Wallet ในภาคธุรกิจจริง",
+      "event": "การตอบรับยอดขายสัปดาห์แรกของ Apple HomeView ในตลาดสมาร์ตโฮม",
       "hype_level": "HIGH"
     },
     {
       "window": "ปลายเดือนพฤศจิกายน",
-      "event": "ความคืบหน้าการยื่นเอกสารเตรียมทำไอพีโอของค่าย Anthropic",
+      "event": "แพตช์ความปลอดภัยระดับโครงสร้างของ Grok Build เพื่อปิดกั้นการรั่วไหลของข้อมูล",
       "hype_level": "HIGH"
     },
     {
       "window": "ต้นเดือนธันวาคม",
-      "event": "การอัปเดตแพตช์ความปลอดภัยของ Grok Build และการรับมือช่องโหว่ระบบเซิร์ฟเวอร์",
+      "event": "การเปิดตัวเกมชุดใหม่บน Apple Arcade นำโดย Football Manager 27 Touch",
       "hype_level": "MEDIUM"
     }
   ],
-  "audio_script_th": "สวัสดีเช้าวันจันทร์ครับ นี่คือคลื่นลับ Cyber Paparazzi สรุปข่าว IT และ AI รอบสัปดาห์ที่สี่สิบหกประจำปีสองพันยี่สิบหก สัปดาห์นี้สมรภูมิปัญญาประดิษฐ์ร้อนระอุจนปรอทแทบแตก เมื่อค่ายโอเพ่นเอไอเปิดตัวแชตจีพีที วอลเล็ต ติดอาวุธให้เหล่าเอเจนต์สามารถทำธุรกรรมและสั่งซื้อของแทนผู้ใช้งานได้โดยตรงภายใต้ระบบความปลอดภัยของบัตรเดิม ทางด้านแอนโทรพิกก็ไม่ยอมน้อยหน้า เริ่มเดินสายโรดโชว์เตรียมเข้าสู่ตลาดหุ้น พร้อมโชว์ความสามารถของโคลดในการออกแบบแผงวงจรอิเล็กทรอนิกส์ได้แบบครบวงจร แต่ฝั่งเอกซ์เอไอกลับเจอศึกหนัก หลังเครื่องมือกร็อกบิลด์ทำข้อมูลลับและแอปพลิเคชันของลูกค้าหลุดสู่สาธารณะกว่าสามหมื่นห้าพันโครงการ ขณะที่ฝั่งฮาร์ดแวร์ แอปเปิลได้ฤกษ์วางจำหน่ายโฮมวิวเพื่อเป็นจอควบคุมบ้านอัจฉริยะ และเอ็นวิเดียได้ออกมายอมรับเป็นการภายในว่ามีความพร้อมทางเทคนิคในการฝังระบบติดตามตำแหน่งชิป เพื่อป้องกันการลักลอบส่งออกตามมาตรการความมั่นคง เรียกได้ว่าวงการเทคโนโลยีสัปดาห์นี้เดินหน้าสู่ยุคที่เอไอมีทั้งเงินในมือและมีสายตาสอดแนมในระดับชิปเซ็ตอย่างแท้จริงครับ"
+  "audio_script_th": "สวัสดีเช้าวันจันทร์ครับ นี่คือคลื่นลับ Cyber Paparazzi สรุปข่าว IT และ AI รอบสัปดาห์ที่สี่สิบหกประจำปีสองพันยี่สิบหก เริ่มต้นความดุเดือดด้วยค่าย OpenAI ที่เปิดตัว ChatGPT Wallet พลิกโฉมวงการด้วยการอนุญาตให้ AI Agent กดทำธุรกรรมซื้อสินค้าและบริการแทนผู้ใช้ได้จริงโดยต้องมีการกดยืนยันเพื่อความปลอดภัย นับเป็นการก้าวเข้าสู่ยุคเศรษฐกิจเอเจนต์อย่างเป็นรูปธรรม ทางด้าน Google ไม่ยอมน้อยหน้า อัปเกรด Google Search ด้วยขุมพลังโมเดล Gemini 4 Hydrogen พร้อมผนึกเครื่องมือสร้างสรรค์จาก Adobe เข้าสู่ระบบนิเวศการทำงาน ฝั่งฮาร์ดแวร์ Apple ได้ฤกษ์วางจำหน่าย Apple HomeView หน้าจออัจฉริยะสำหรับควบคุมบ้านอย่างเป็นทางการแล้ว แต่ข่าวร้ายสายความปลอดภัยตกเป็นของ Grok Build ที่เกิดข้อมูลรั่วไหลเปิดเผยข้อมูลของแอปพลิเคชันกว่าสามหมื่นห้าพันแห่ง และปิดท้ายด้วยความเคลื่อนไหวระดับโลกเมื่อ NVIDIA ยืนยันในทางเทคนิคว่าสามารถฝังระบบติดตามชิปเพื่อป้องกันการลักลอบค้าตามกฎหมายความมั่นคงได้จริง ติดตามความคืบหน้าของสมรภูมิเทคโนโลยีสุดเข้มข้นนี้ได้ใหม่ในสัปดาห์หน้าครับ"
 }
