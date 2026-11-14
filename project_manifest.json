@@ -1,0 +1,35 @@
+{
+  "project": "cyber-paparazzi",
+  "codename": "Cyber Paparazzi HQ",
+  "version": "2.0.0-HQ",
+  "lead_investigator": "ภก.รัฐนนท์ แสงไทยทวีพร",
+  "schedule": {
+    "frequency": "WEEKLY",
+    "day": "Monday",
+    "time_bkk": "08:00",
+    "cron_utc": "0 1 * * 1"
+  },
+  "telegram_alert_standard": {
+    "target_room_id": "-1003712039650",
+    "bot_handle": "@Google_Antigravity_alert_bot",
+    "policy": "SINGLE_ROOM_ONLY",
+    "max_chars": 1200
+  },
+  "tracks": [
+    "ai_frontier",
+    "hardware_silicon",
+    "software_devtools",
+    "local_open_ai",
+    "deep_tech"
+  ],
+  "visual_modules": [
+    "periodic_table_tech_series",
+    "weekly_1v1_spec_showdown",
+    "ai_arms_race_leaderboard",
+    "dual_mode_lens_switcher",
+    "hype_vs_impact_dual_meter",
+    "action_decision_compass",
+    "launch_radar_matrix",
+    "web_audio_fx_and_thai_tts"
+  ]
+}

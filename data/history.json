@@ -1,0 +1,34 @@
+[
+  {
+    "week_id": "2026-W46",
+    "date": "2026-11-15",
+    "episode_title": "Agentic Wallets & Silicon Wiretaps: สัปดาห์แห่งเงินตรา AI และชิปสอดแนม",
+    "topics": [
+      {
+        "title": "OpenAI ส่ง ChatGPT Wallet ปล่อยเอเจนต์ช็อปปิ้งแทนมนุษย์แบบมีไฟเขียว",
+        "track": "ai_frontier"
+      },
+      {
+        "title": "Google จับมือ Adobe ยกทัพครีเอทีฟบุก Gemini และ Google Workspace",
+        "track": "ai_frontier"
+      },
+      {
+        "title": "Apple HomeView เปิดขายแล้ว ฮาร์ดแวร์จอกลางคุมบ้านและบันเทิงครบวงจร",
+        "track": "hardware_silicon"
+      },
+      {
+        "title": "หายนะความปลอดภัย Grok Build ปล่อยไก่ทำข้อมูลหลุดทะลักกว่า 35,000 แอป",
+        "track": "software_devtools"
+      },
+      {
+        "title": "ทลายกำแพงความจำ Multi-Granularity Memory สปีดเอเจนต์ฉลาดขึ้นโดยไม่ต้องเทรนใหม่",
+        "track": "local_open_ai"
+      },
+      {
+        "title": "NVIDIA แอบรับปากทำได้ ระบบแกะรอยชิปต้านลักลอบส่งออก สวนทางคำคัดค้านในอดีต",
+        "track": "deep_tech"
+      }
+    ],
+    "updated_at": "2026-11-15T01:55:39.364721+07:00"
+  }
+]

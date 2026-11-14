@@ -1,0 +1,113 @@
+[
+  {
+    "saga_id": "frontier-elemental-models",
+    "series_title": "The Frontier AI Model Race (Google • OpenAI • Anthropic)",
+    "vendor": "Multi-Lab Frontier",
+    "episode_badge": "EP.46 • FINTECH AGENT ESCALATION",
+    "completion_pct": 72,
+    "previously_on": "สมรภูมิโมเดลเน้นแข่ง Benchmark การคิดวิเคราะห์และแก้โค้ดแบบก้าวกระโดด",
+    "latest_twist": "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent กดซื้อของและทำธุรกรรมได้เองอย่างเป็นทางการ ส่วน Anthropic เตรียมโรดโชว์ IPO",
+    "power_up_multiplier": "💳 Agentic Autonomous Commerce + IPO Valuation",
+    "next_episode_rumor": "จับตาระบบความปลอดภัยขั้นสูงสุดในการป้องกันคลังเงินของ AI Agents",
+    "element_roster": [
+      {
+        "number": "01",
+        "symbol": "Gm",
+        "name": "Gemini (Adobe Hybrid)",
+        "role_tag": "Creative Productivity",
+        "multiplier_badge": "Adobe Core",
+        "status": "UNLOCKED"
+      },
+      {
+        "number": "02",
+        "symbol": "Cl",
+        "name": "Claude Sonnet",
+        "role_tag": "Hardware Designer",
+        "multiplier_badge": "Circuit Synthesis",
+        "status": "UNLOCKED"
+      },
+      {
+        "number": "03",
+        "symbol": "Gp",
+        "name": "ChatGPT Wallet / Codex",
+        "role_tag": "Autonomous Buyer",
+        "multiplier_badge": "Direct Payment",
+        "status": "NEW"
+      }
+    ]
+  },
+  {
+    "saga_id": "silicon-titan-war",
+    "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • AMD)",
+    "vendor": "Silicon Titans",
+    "episode_badge": "EP.46 • SILICON SURVEILLANCE & SMART DISPLAY",
+    "completion_pct": 68,
+    "previously_on": "ขับเคี่ยวแย่งชิงสเปกหน่วยความจำแบนด์วิดท์สูงและประหยัดพลังงานในระดับดาต้าเซ็นเตอร์",
+    "latest_twist": "NVIDIA คอนเฟิร์มเทคนิคการแกะรอยชิปทางกายภาพเพื่อป้องกันการลักลอบค้า ฝั่ง Apple วางขาย Apple HomeView บุกสมาร์ตโฮม",
+    "power_up_multiplier": "📡 Hardware Traceability & Ambient Smart Screens",
+    "next_episode_rumor": "มาตรการตรวจสอบชิป AI ภาคบังคับในกฎหมายความมั่นคงระดับโลก",
+    "element_roster": [
+      {
+        "number": "14",
+        "symbol": "Nv",
+        "name": "NVIDIA Tracked Silicon",
+        "role_tag": "Geo-Fence GPU",
+        "multiplier_badge": "Anti-Smuggling",
+        "status": "NEW"
+      },
+      {
+        "number": "15",
+        "symbol": "Ap",
+        "name": "Apple HomeView",
+        "role_tag": "Ambient Display",
+        "multiplier_badge": "Home Control",
+        "status": "UNLOCKED"
+      },
+      {
+        "number": "16",
+        "symbol": "Am",
+        "name": "AMD ROCm",
+        "role_tag": "Open Challenger",
+        "multiplier_badge": "ROCm Stack",
+        "status": "RUMORED"
+      }
+    ]
+  },
+  {
+    "saga_id": "open-weight-uprising",
+    "series_title": "Open-Weight & Local AI Rebellion",
+    "vendor": "Open-Source Ecosystem",
+    "episode_badge": "EP.46 • MULTI-AGENT MEMORY PROTOCOLS",
+    "completion_pct": 76,
+    "previously_on": "โมเดลเปิดเสรีไล่กวดด้านพารามิเตอร์และการรัน Inference ในเครื่องส่วนบุคคล",
+    "latest_twist": "วงการวิจัยแห่เจาะลึกระบบความจำ Multi-Granularity Memory สำหรับเอเจนต์หลายตัวทำงานร่วมกันโดยไม่ต้องเทรนโมเดลใหม่",
+    "power_up_multiplier": "🧠 Collective Agent Memory & Direct Pixel Diffusion",
+    "next_episode_rumor": "สถาปัตยกรรม Memory Pool กลางสำหรับ Local Agent Swarms",
+    "element_roster": [
+      {
+        "number": "21",
+        "symbol": "Ds",
+        "name": "DeepSeek R1 Core",
+        "role_tag": "Open Reasoning",
+        "multiplier_badge": "Zero Cost Logic",
+        "status": "UNLOCKED"
+      },
+      {
+        "number": "22",
+        "symbol": "Qw",
+        "name": "Qwen Code Engine",
+        "role_tag": "Polyglot Agent",
+        "multiplier_badge": "Local King",
+        "status": "UNLOCKED"
+      },
+      {
+        "number": "23",
+        "symbol": "Ag",
+        "name": "Agentic Memory Swarm",
+        "role_tag": "Distributed Memory",
+        "multiplier_badge": "No-Retrain Sync",
+        "status": "NEW"
+      }
+    ]
+  }
+]

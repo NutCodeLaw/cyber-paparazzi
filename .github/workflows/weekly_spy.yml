@@ -1,0 +1,67 @@
+name: 📸 Cyber Paparazzi Weekly Spy Dispatch
+
+on:
+  schedule:
+    # 01:00 UTC every Monday = 08:00 AM Asia/Bangkok
+    - cron: '0 1 * * 1'
+  workflow_dispatch:
+    inputs:
+      force:
+        description: 'Force regenerate this week dossier'
+        required: false
+        default: false
+        type: boolean
+
+permissions:
+  contents: write
+  pages: write
+  id-token: write
+
+jobs:
+  spy_and_publish:
+    runs-on: ubuntu-latest
+    timeout-minutes: 15
+
+    steps:
+      - name: 📥 Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: 🐍 Set up Python 3.12
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.12'
+          cache: 'pip'
+
+      - name: 📦 Install dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: 📸 Run Cyber Paparazzi Weekly Spy Engine
+        env:
+          GEMINI_API_KEY: ${{ secrets.GEMINI_API_KEY }}
+          TELEGRAM_BOT_TOKEN: ${{ secrets.TELEGRAM_BOT_TOKEN }}
+          TELEGRAM_CHAT_ID: ${{ secrets.TELEGRAM_CHAT_ID }}
+          TZ: 'Asia/Bangkok'
+        run: |
+          if [ "${{ inputs.force }}" = "true" ]; then
+            python main.py --force
+          else
+            python main.py
+          fi
+
+      - name: 📤 Commit and push intelligence updates
+        run: |
+          git config --global user.name "CyberPaparazzi-Bot"
+          git config --global user.email "bot@cyberpaparazzi.internal"
+          git add LATEST.md README.md archives/ data/ web/ index.html
+
+          if git diff --staged --quiet; then
+            echo "No changes to commit."
+          else
+            TODAY=$(date +'%Y-%m-%d')
+            git commit -m "feat(weekly): 📸 Cyber Paparazzi Dossier for ${TODAY} [skip ci]"
+            git push origin main
+          fi
