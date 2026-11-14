@@ -21,6 +21,22 @@ from src.config import (
 from src.utils import get_iso_date, make_emoji_bar, safe_mermaid_label
 
 
+def _md_cell(value: Any, default: str = "-") -> str:
+    """Normalize and escape a Markdown table cell so pipes or newlines never break columns."""
+    text = str(value if value is not None else "").strip()
+    if not text:
+        return default
+    return text.replace("\r", " ").replace("\n", " ").replace("|", "\\|")
+
+
+def _format_compass_cell(items: List[Dict[str, Any]], idx: int) -> str:
+    """Format a single Action Decision Compass cell safely for Markdown tables."""
+    if idx >= len(items):
+        return "-"
+    entry = items[idx]
+    return f"**{_md_cell(entry.get('item'))}** — {_md_cell(entry.get('reason'))}"
+
+
 def generate_markdown_report(payload: Dict[str, Any]) -> str:
     """Generate a visual-first, zero-wall-of-text Markdown intelligence dossier."""
     date_th = payload.get("date_formatted", payload.get("date", ""))
@@ -76,8 +92,8 @@ def generate_markdown_report(payload: Dict[str, Any]) -> str:
                 st = el.get("status", "UNLOCKED")
                 st_icon = "🔥 **NEW**" if st == "NEW" else ("🔒 RUMORED" if st == "RUMORED" else "🟢 UNLOCKED")
                 lines.append(
-                    f"| `{el.get('number', '01')}` | **{el.get('symbol', 'Ai')}** | {el.get('name', '-')} | "
-                    f"{el.get('role_tag', '-')} | `{el.get('multiplier_badge', '-')}` | {st_icon} |"
+                    f"| `{_md_cell(el.get('number'), '01')}` | **{_md_cell(el.get('symbol'), 'Ai')}** | {_md_cell(el.get('name'))} | "
+                    f"{_md_cell(el.get('role_tag'))} | `{_md_cell(el.get('multiplier_badge'))}` | {st_icon} |"
                 )
             lines.append("")
 
@@ -96,15 +112,15 @@ def generate_markdown_report(payload: Dict[str, Any]) -> str:
         "",
         f"## ⚔️ 1v1 Weekly Spec Showdown: {sd.get('title', 'ศึกมวยคู่เอก')}",
         "",
-        f"| 🥊 {fl.get('avatar_emoji', '🤖')} {fl.get('name', 'Left')} (`{fl.get('vendor', '-')}`) | 📊 ยกตัดสิน (Tug-of-War) | {fr.get('avatar_emoji', '⚡')} {fr.get('name', 'Right')} (`{fr.get('vendor', '-')}`) 🥊 |",
+        f"| 🥊 {fl.get('avatar_emoji', '🤖')} {_md_cell(fl.get('name'), 'Left')} (`{_md_cell(fl.get('vendor'))}`) | 📊 ยกตัดสิน (Tug-of-War) | {fr.get('avatar_emoji', '⚡')} {_md_cell(fr.get('name'), 'Right')} (`{_md_cell(fr.get('vendor'))}`) 🥊 |",
         "|:---|:---:|:---|",
-        f"| **Score:** `{fl.get('total_score', 80)}/100` • *ท่าไม้ตาย:* {fl.get('special_move', '-')} | **ภาพรวม** | **Score:** `{fr.get('total_score', 80)}/100` • *ท่าไม้ตาย:* {fr.get('special_move', '-')} |",
+        f"| **Score:** `{fl.get('total_score', 80)}/100` • *ท่าไม้ตาย:* {_md_cell(fl.get('special_move'))} | **ภาพรวม** | **Score:** `{fr.get('total_score', 80)}/100` • *ท่าไม้ตาย:* {_md_cell(fr.get('special_move'))} |",
     ])
     for r in sd.get("rounds", []):
         lp = r.get("left_pct", 50)
         rp = r.get("right_pct", 50)
         bar = make_emoji_bar(lp, "🟦", "🟪", 6)
-        lines.append(f"| **{lp}%** | {r.get('metric_name', '-')} <br> {bar} <br> *{r.get('round_note', '')}* | **{rp}%** |")
+        lines.append(f"| **{lp}%** | {_md_cell(r.get('metric_name'))} <br> {bar} <br> *{_md_cell(r.get('round_note'), '')}* | **{rp}%** |")
 
     lines.extend([
         "",
@@ -123,8 +139,8 @@ def generate_markdown_report(payload: Dict[str, Any]) -> str:
         delta = int(row.get("weekly_delta", 0))
         delta_str = f"🟢 ▲+{delta}" if delta > 0 else (f"🔴 ▼{delta}" if delta < 0 else "⚪ 0")
         lines.append(
-            f"| {row.get('icon', '🛰️')} **{row.get('faction', '-')}** | {p_bar} **{p_score}** | {delta_str} | "
-            f"`{row.get('stance_badge', 'ACTIVE')}` | {row.get('signature_move', '-')} |"
+            f"| {row.get('icon', '🛰️')} **{_md_cell(row.get('faction'))}** | {p_bar} **{p_score}** | {delta_str} | "
+            f"`{_md_cell(row.get('stance_badge'), 'ACTIVE')}` | {_md_cell(row.get('signature_move'))} |"
         )
 
     lines.extend([
@@ -164,9 +180,9 @@ def generate_markdown_report(payload: Dict[str, Any]) -> str:
     sk = ac.get("skip_hype_trap", [])
     max_rows = max(len(sw), len(wt), len(sk), 1)
     for i in range(max_rows):
-        c1 = f"**{sw[i]['item']}** — {sw[i]['reason']}" if i < len(sw) else "-"
-        c2 = f"**{wt[i]['item']}** — {wt[i]['reason']}" if i < len(wt) else "-"
-        c3 = f"**{sk[i]['item']}** — {sk[i]['reason']}" if i < len(sk) else "-"
+        c1 = _format_compass_cell(sw, i)
+        c2 = _format_compass_cell(wt, i)
+        c3 = _format_compass_cell(sk, i)
         lines.append(f"| {c1} | {c2} | {c3} |")
 
     lines.extend([
@@ -180,8 +196,8 @@ def generate_markdown_report(payload: Dict[str, Any]) -> str:
     ])
     for item in payload.get("launch_radar", []):
         lines.append(
-            f"| **{item.get('name', '-')}** | `{item.get('category', '-')}` | {item.get('vendor', '-')} | "
-            f"{item.get('killer_spec', '-')} | `{item.get('availability', '-')}` | [Open]({item.get('source_url', '#')}) |"
+            f"| **{_md_cell(item.get('name'))}** | `{_md_cell(item.get('category'))}` | {_md_cell(item.get('vendor'))} | "
+            f"{_md_cell(item.get('killer_spec'))} | `{_md_cell(item.get('availability'))}` | [Open]({item.get('source_url', '#')}) |"
         )
 
     lines.extend([
@@ -1575,11 +1591,14 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
           return;
         }
         try {
-          const resp = await fetch(target);
+          const fetchTarget = (!/^https?:\/\//.test(target) && window.location.pathname.includes("/web/"))
+            ? `../${target}`
+            : target;
+          const resp = await fetch(fetchTarget);
           if (!resp.ok) throw new Error("Fetch failed");
           const data = await resp.json();
           try {
-            const mdResp = await fetch(target.replace(/\.json$/, ".md"));
+            const mdResp = await fetch(fetchTarget.replace(/\.json$/, ".md"));
             if (mdResp.ok) {
               document.getElementById("raw-markdown-data").value = await mdResp.text();
             }

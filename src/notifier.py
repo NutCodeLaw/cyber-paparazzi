@@ -67,7 +67,7 @@ def build_telegram_message(payload: Dict[str, Any]) -> str:
         f"⚔️ <b>1v1 Showdown:</b> {sd_verdict}\n\n"
         f"🕵️‍♂️ <b>3 ช็อตเด็ดรอบสัปดาห์:</b>\n"
         + "\n".join(scoop_lines)
-        + "\n\n🌐 <a href=\"https://nutcodelaw.github.io/cyber-paparazzi/\">เปิด Cyber Cockpit & ฟังเสียงสรุป</a>"
+        + "\n\n🌐 <a href=\"https://nutcodelaw.github.io/cyber-paparazzi/\">เปิด Cyber Cockpit &amp; ฟังเสียงสรุป</a>"
     )
     if len(msg) > TELEGRAM_TARGET_MAX:
         # Trim gracefully while preserving valid HTML

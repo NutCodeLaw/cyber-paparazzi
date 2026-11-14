@@ -1552,11 +1552,14 @@ flowchart LR
           return;
         }
         try {
-          const resp = await fetch(target);
+          const fetchTarget = (!/^https?:\/\//.test(target) && window.location.pathname.includes("/web/"))
+            ? `../${target}`
+            : target;
+          const resp = await fetch(fetchTarget);
           if (!resp.ok) throw new Error("Fetch failed");
           const data = await resp.json();
           try {
-            const mdResp = await fetch(target.replace(/\.json$/, ".md"));
+            const mdResp = await fetch(fetchTarget.replace(/\.json$/, ".md"));
             if (mdResp.ok) {
               document.getElementById("raw-markdown-data").value = await mdResp.text();
             }
