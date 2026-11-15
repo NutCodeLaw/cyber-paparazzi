@@ -505,14 +505,17 @@ def run_spy_analysis(
     for model_name in GEMINI_MODELS:
         try:
             print(f"[SpyAnalyst] Intercepting & analyzing via {model_name}...")
+            cfg_kwargs: Dict[str, Any] = {
+                "response_mime_type": "application/json",
+                "temperature": 0.6,
+            }
+            if "lite" not in model_name:
+                cfg_kwargs["thinking_config"] = types.ThinkingConfig(thinking_level="LOW")
             try:
                 response = client.models.generate_content(
                     model=model_name,
                     contents=prompt,
-                    config=types.GenerateContentConfig(
-                        response_mime_type="application/json",
-                        temperature=0.6,
-                    ),
+                    config=types.GenerateContentConfig(**cfg_kwargs),
                 )
             except Exception:
                 response = client.models.generate_content(
@@ -520,6 +523,13 @@ def run_spy_analysis(
                     contents=prompt,
                 )
 
+            um = getattr(response, "usage_metadata", None)
+            if um:
+                print(
+                    f"[SpyAnalyst] Tokens -> prompt={getattr(um, 'prompt_token_count', 0)} "
+                    f"out={getattr(um, 'candidates_token_count', 0)} "
+                    f"think={getattr(um, 'thoughts_token_count', 0) or 0}"
+                )
             raw_text = response.text or ""
             parsed = extract_json_from_response(raw_text)
             validated = sanitize_analysis(parsed, intel_data)

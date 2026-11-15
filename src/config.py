@@ -31,11 +31,11 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1003712039650").strip()
 
-# AI Models (Primary and Fallbacks)
+# AI Models (Flagship LOW-thinking primary + non-deprecated GA fallbacks)
 GEMINI_MODELS = [
     "gemini-3.8-flash",
+    "gemini-3.6-flash",
     "gemini-3.5-flash-lite",
-    "gemini-3.1-flash-lite",
     "gemini-flash-latest",
 ]
 
