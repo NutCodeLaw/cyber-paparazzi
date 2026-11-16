@@ -1,0 +1,396 @@
+{
+  "week_id": "2026-W47",
+  "date": "2026-11-16",
+  "date_formatted": "วันจันทร์ที่ 16 พฤศจิกายน 2569",
+  "time": "09:16 น.",
+  "intel_stats": {
+    "total_feeds": 18,
+    "active_feeds": 18,
+    "raw_candidates": 112,
+    "recent_deduped": 69,
+    "selected_count": 59
+  },
+  "episode_banner": {
+    "season_ep": "SEASON 2026 • EP.47",
+    "episode_title": "GPT-6 Astra & Quantum Proofs: ชิประเบิด สปายป่วน วงการ AI เดือด",
+    "heat_score": 92,
+    "heat_label": "CODE RED",
+    "heat_rationale": "สัปดาห์นี้โลก AI สั่นสะเทือนด้วยการพิสูจน์ฟิสิกส์ระดับทฤษฎีจาก GPT-6 Astra ผสมดราม่าชิป NVIDIA และช่องโหว่ความปลอดภัยไซเบอร์ระดับวิกฤต",
+    "wiretap_ticker": [
+      "OpenAIGPT-6 Astra ช่วยพิสูจน์ทฤษฎี Standard Model บน Lattice สำเร็จ",
+      "การเมืองชิปเดือด: สภาสหรัฐฯ จ่อคุมเข้มส่งออก GPU หลังดราม่า อดีต CEO NVIDIA",
+      "วิกฤตความปลอดภัย: ช่องโหว่ SignDrop บน Windows ให้สิทธิ์ System แก่แฮกเกอร์"
+    ]
+  },
+  "tech_series_sagas": [
+    {
+      "saga_id": "frontier-elemental-models",
+      "series_title": "The Frontier AI Model Race (Google • OpenAI • Anthropic)",
+      "vendor": "Multi-Lab Frontier",
+      "episode_badge": "EP.47 • QUANTUM SCIENCE & ELECTRONIC DESIGN",
+      "completion_pct": 79,
+      "previously_on": "OpenAI จุดชนวนระบบการเงิน Agentic Payments ด้วย ChatGPT Wallet ในสัปดาห์ก่อน",
+      "latest_twist": "OpenAI เผย GPT-6 Astra ช่วยคิดและพิสูจน์ทฤษฎีทางฟิสิกส์ระดับ Standard Model ขณะที่ Claude สามารถออกแบบต้นแบบอิเล็กทรอนิกส์ได้แบบครบวงจร",
+      "power_up_multiplier": "⚛️ Scientific Proofs & Electronic Hardware Automation",
+      "next_episode_rumor": "การเปิดตัวโมเดลสายวิทยาศาสตร์บริสุทธิ์เพื่อเร่งการค้นพบยาและวัสดุศาสตร์",
+      "element_roster": [
+        {
+          "number": "01",
+          "symbol": "Gm",
+          "name": "Gemini 4 Hydrogen",
+          "role_tag": "Agentic Workflows",
+          "multiplier_badge": "Search Native",
+          "status": "UNLOCKED"
+        },
+        {
+          "number": "02",
+          "symbol": "Cl",
+          "name": "Claude Electronics Engine",
+          "role_tag": "Hardware Designer",
+          "multiplier_badge": "Full PCB Design",
+          "status": "NEW"
+        },
+        {
+          "number": "04",
+          "symbol": "As",
+          "name": "GPT-6 Astra",
+          "role_tag": "Quantum Theorist",
+          "multiplier_badge": "Standard Model",
+          "status": "NEW"
+        }
+      ]
+    },
+    {
+      "saga_id": "silicon-titan-war",
+      "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • AMD)",
+      "vendor": "Silicon Titans",
+      "episode_badge": "EP.47 • GEOPOLITICAL SPY & AI HEALTH STUDY",
+      "completion_pct": 75,
+      "previously_on": "NVIDIA รับปากทำระบบแกะรอยฮาร์ดแวร์เพื่อป้องกันการลักลอบส่งออกชิป",
+      "latest_twist": "สภาสหรัฐฯ เตรียมยึดกฎคุมเข้มส่งออกชิป AI หลังดราม่า Jensen Huang และสายลับจีน ส่วน Apple เปิดการศึกษาวิจัย AI เพื่อสุขภาพ",
+      "power_up_multiplier": "🏥 Health Conversational AI & Strict Geo-Export Rules",
+      "next_episode_rumor": "มาตรการล็อกระดับเฟิร์มแวร์ในชิปประมวลผลรุ่นถัดไปตามข้อกำหนดความมั่นคง",
+      "element_roster": [
+        {
+          "number": "14",
+          "symbol": "Nv",
+          "name": "NVIDIA Tracked Silicon",
+          "role_tag": "Geo-Fence GPU",
+          "multiplier_badge": "Export Restricted",
+          "status": "UNLOCKED"
+        },
+        {
+          "number": "17",
+          "symbol": "Ap",
+          "name": "Apple Health AI Study",
+          "role_tag": "Clinical Intelligence",
+          "multiplier_badge": "Virtual Study",
+          "status": "NEW"
+        }
+      ]
+    },
+    {
+      "saga_id": "open-weight-uprising",
+      "series_title": "Open-Weight & Local AI Rebellion",
+      "vendor": "Open-Source Ecosystem",
+      "episode_badge": "EP.47 • ADAPTIVE REASONING & HYBRID MODELS",
+      "completion_pct": 82,
+      "previously_on": "วงการวิจัยเปิดสถาปัตยกรรม Multi-Granularity Memory สำหรับเอเจนต์",
+      "latest_twist": "งานวิจัยใหม่ The Value of Thinking นำเสนอการเรียนรู้ว่าเมื่อไหร่ควรใช้เหตุผลในโมเดลไฮบริดโดยไม่ต้องสร้างโทเคนฟุ่มเฟือย",
+      "power_up_multiplier": "💡 Dynamic Reasoning Token Optimization",
+      "next_episode_rumor": "การรันโมเดลไฮบริดแบบปรับการคิดตามความยากบนฮาร์ดแวร์ขอบแดน",
+      "element_roster": [
+        {
+          "number": "24",
+          "symbol": "Vt",
+          "name": "Value-of-Thinking Core",
+          "role_tag": "Hybrid Decision",
+          "multiplier_badge": "Selective Reasoning",
+          "status": "NEW"
+        }
+      ]
+    }
+  ],
+  "weekly_showdown": {
+    "title": "Frontier Science Reasoning vs Autonomous Hardware Design",
+    "fighter_left": {
+      "name": "GPT-6 Astra (Standard Model Proof)",
+      "vendor": "OpenAI",
+      "avatar_emoji": "⚛️",
+      "total_score": 94,
+      "special_move": "การพิสูจน์ฟิสิกส์ทฤษฎีบน Lattice"
+    },
+    "fighter_right": {
+      "name": "Claude Electronics Engine",
+      "vendor": "Anthropic",
+      "avatar_emoji": "🔌",
+      "total_score": 91,
+      "special_move": "การออกแบบวงจรอิเล็กทรอนิกส์ครบวงจร"
+    },
+    "winner_verdict": "GPT-6 Astra คว้าชัยชนะสัปดาห์นี้ไปอย่างเฉียบขาด ด้วยการก้าวข้ามจากการเขียนโค้ดธรรมดาไปสู่การสกัดทฤษฎีทางฟิสิกส์ขั้นสูง",
+    "rounds": [
+      {
+        "metric_name": "ยกที่ 1: ความซับซ้อนของตรรกะ (Logic & Reasoning)",
+        "left_pct": 60,
+        "right_pct": 40,
+        "round_note": "Astra โชว์ศักยภาพการคิดระดับฟิสิกส์ทฤษฎีเบื้องลึก"
+      },
+      {
+        "metric_name": "ยกที่ 2: การนำไปประยุกต์ใช้ในอุตสาหกรรม (Practical Utility)",
+        "left_pct": 45,
+        "right_pct": 55,
+        "round_note": "Claude ออกแบบวงจรอิเล็กทรอนิกส์นำไปผลิตจริงได้ทันที"
+      },
+      {
+        "metric_name": "ยกที่ 3: ผลกระทบต่อวงการวิทยาศาสตร์ (Scientific Impact)",
+        "left_pct": 58,
+        "right_pct": 42,
+        "round_note": "การสร้างบล็อกวิทยาศาสตร์ใหม่ของ OpenAI ปักหมุด AI เพื่อการค้นพบ"
+      }
+    ]
+  },
+  "ai_arms_race": [
+    {
+      "faction": "OpenAI",
+      "icon": "🟢",
+      "power_score": 93,
+      "weekly_delta": 5,
+      "stance_badge": "SURGING",
+      "signature_move": "ปล่อย GPT-6 Astra ช่วยงานวิจัยฟิสิกส์ทฤษฎีระดับโลก"
+    },
+    {
+      "faction": "Google DeepMind",
+      "icon": "🔵",
+      "power_score": 88,
+      "weekly_delta": 2,
+      "stance_badge": "DEFENDING",
+      "signature_move": "ขยาย Gemini 4 Hydrogen สู่ระบบงานเอเจนต์ระดับองค์กร"
+    },
+    {
+      "faction": "Anthropic",
+      "icon": "🟠",
+      "power_score": 89,
+      "weekly_delta": 4,
+      "stance_badge": "STRIKING",
+      "signature_move": "เปิดความสามารถ Claude ออกแบบวงจรอิเล็กทรอนิกส์"
+    },
+    {
+      "faction": "Meta & Open-Weight",
+      "icon": "🦙",
+      "power_score": 81,
+      "weekly_delta": 2,
+      "stance_badge": "STEALTH",
+      "signature_move": "พัฒนางานวิจัยการคิดแบบไฮบริด Value of Thinking"
+    },
+    {
+      "faction": "NVIDIA & Silicon",
+      "icon": "⚡",
+      "power_score": 89,
+      "weekly_delta": -3,
+      "stance_badge": "DEFENDING",
+      "signature_move": "เผชิญแรงกดดันจากสภาสหรัฐฯ เรื่องกฎหมายส่งออกชิป"
+    },
+    {
+      "faction": "xAI & DeepSeek",
+      "icon": "🟣",
+      "power_score": 80,
+      "weekly_delta": 1,
+      "stance_badge": "CHALLENGING",
+      "signature_move": "รักษาฐานตลาดโมเดลประหยัดต้นทุน Inference"
+    }
+  ],
+  "top_scoops": [
+    {
+      "track": "ai_frontier",
+      "headline": "GPT-6 Astra ทะลายพรมแดนฟิสิกส์: ช่วยพิสูจน์ Standard Model บน Lattice",
+      "paparazzi_hook": "สายสืบดักจับข้อมูลสุดช็อก! OpenAI ไม่ได้แค่อัปเดตแชตบอต แต่ปล่อย GPT-6 Astra เข้าไปลุยงานฟิสิกส์ทฤษฎีขั้นสูง ร่วมสกัดบทพิสูจน์ทฤษฎีอนุภาคแบบนอนเพอร์เทอร์เบทีฟจนนักวิทยาศาสตร์ต้องตะลึง!",
+      "engineer_spec_summary": "OpenAI ตีพิมพ์ผลงานวิจัยการใช้โมเดล Astra ช่วยสร้างบทพิสูจน์ Candidate nonperturbative lattice definition ของ Standard Model ได้สำเร็จ แสดงถึงความสามารถด้านสัญลักษณ์และการประมวลผลตรรกะระดับสูง",
+      "spec_chips": [
+        "⚛️ Standard Model",
+        "📜 Lattice Proofs",
+        "🔬 OpenAI Science"
+      ],
+      "hype_score": 95,
+      "real_impact_score": 92,
+      "spy_verdict": "GAME CHANGER",
+      "source_name": "OpenAI Newsroom",
+      "source_url": "https://openai.com/index/step-toward-defining-the-standard-model"
+    },
+    {
+      "track": "hardware_silicon",
+      "headline": "สภาสหรัฐฯ เดือด! จ่อล้างไพ่กฎส่งออกชิป AI หลังดราม่า Jensen Huang",
+      "paparazzi_hook": "สลายมโนสายลักลอบ! หลังมีข่าวลือสปายและมรสุมของอดีต CEO NVIDIA สภาคองเกรสเตรียมงัดมาตรการคุมเข้มส่งออก GPU ขั้นสูงสุด งานนี้ส่งผลกระทบต่อห่วงโซ่อุปทานเทคทั่วโลก!",
+      "engineer_spec_summary": "สมาชิกสภาสหรัฐฯ ทั้งสองพรรคผลักดันกฎระเบียบส่งออกชิป AI ที่เข้มงวดขึ้น ครอบคลุมการแกะรอยฮาร์ดแวร์ การยืนยันตำแหน่งทางภูมิศาสตร์ และการจำกัดการเข้าถึงเทคโนโลยีพรีเมียม",
+      "spec_chips": [
+        "🛡️ Export Controls",
+        "⚖️ Congressional Action",
+        "🔍 Chip Tracking"
+      ],
+      "hype_score": 88,
+      "real_impact_score": 90,
+      "spy_verdict": "GAME CHANGER",
+      "source_name": "The Verge",
+      "source_url": "https://www.theverge.com/ai-artificial-intelligence/1033984/congress-export-rules-ai-chips-china"
+    },
+    {
+      "track": "software_devtools",
+      "headline": "ศึก SemVer ของ AI Coding Agents: Claude Sonnet 5.5 สอบผ่าน หรือตาบอดกับเลขเวอร์ชัน?",
+      "paparazzi_hook": "อย่าเพิ่งไว้ใจเอเจนต์เขียนโค้ด! ทีมวิจัย Microsoft จับเอเจนต์รันสอบ 1,000 ครั้ง พบว่าหากใส่เลข Breaking Upgrade เป็น 2.0.0 โมเดลอย่าง Claude Sonnet 5.5 จะตรวจเช็กถูกต้องครบ 100% แต่ถ้าเนียนใช้ 1.4.3 กลับปล่อยผ่านจนแอปพัง!",
+      "engineer_spec_summary": "Microsoft DevBlogs เผยผลทดสอบ SemVer กับ AI Coding Agents ชี้ให้เห็นว่าโมเดลอิงตาม Semantic Versioning ตัวเลขหลักอย่างรุนแรง หากเวอร์ชันไม่สะท้อนการเปลี่ยนแปลง breaking changes เอเจนต์อาจล้มเหลวในการตรวจสอบความปลอดภัยของโค้ด",
+      "spec_chips": [
+        "📊 1,000 Runs Test",
+        "🏷️ SemVer Sensitivity",
+        "🐛 Code Integrity"
+      ],
+      "hype_score": 84,
+      "real_impact_score": 89,
+      "spy_verdict": "SOLID UPGRADE",
+      "source_name": "Microsoft DevBlogs",
+      "source_url": "https://devblogs.microsoft.com/blog/do-ai-coding-agents-care-about-semver/"
+    },
+    {
+      "track": "local_open_ai",
+      "headline": "The Value of Thinking: โมเดลไฮบริดคิดก่อนตอบ เลิกเปลืองโทเคนโดยไม่จำเป็น",
+      "paparazzi_hook": "สายเปิดเสรีได้เฮ! งานวิจัยใหม่ประเมินคุณค่าของการใช้เหตุผล (Reasoning) ช่วยให้โมเดลตัดสินใจได้ว่า 'เมื่อไหร่ควรคิด' และ 'เมื่อไหร่ควรตอบทันที' ไม่ต้องเสียเวลาเจเนอเรตโทเคนความคิดยาวเหยียดอีกต่อไป!",
+      "engineer_spec_summary": "งานวิจัยบน Hugging Face นำเสนอเฟรมเวิร์กการตัดสินใจแบบไฮบริดที่เลือกระดับการประมวลผลตรรกะตามความซับซ้อนของโจทย์ ช่วยลด Latency และต้นทุนการรัน Inference ในฮาร์ดแวร์ท้องถิ่นได้อย่างมีประสิทธิภาพ",
+      "spec_chips": [
+        "🧠 Adaptive Reasoning",
+        "📉 Token Efficiency",
+        "⚡ Dynamic Thinking"
+      ],
+      "hype_score": 82,
+      "real_impact_score": 86,
+      "spy_verdict": "SOLID UPGRADE",
+      "source_name": "Hugging Face Papers",
+      "source_url": "https://huggingface.co/papers/2611.16961"
+    },
+    {
+      "track": "deep_tech",
+      "headline": "ผ่าวิกฤตความปลอดภัย: ช่องโหว่ SignDrop บน Windows ให้สิทธิ์ System แฮกเกอร์รุมยึดเครื่อง",
+      "paparazzi_hook": "เตือนภัยระดับสีแดง! นักวิจัยหัวเสียปล่อยช่องโหว่ 0-day รหัส SignDrop บน Windows ที่เปิดทางให้ผู้ใช้ระดับ Local สวมรอยยึดสิทธิ์ System สูงสุดอย่างง่ายดาย ต้องรีบแพตช์ด่วน!",
+      "engineer_spec_summary": "การค้นพบการโจมตี Local Privilege Escalation (LPE) ผ่าน SignDrop บนระบบปฏิบัติการ Windows ช่วยให้ผู้บุกรุกเปลี่ยนสิทธิ์จากผู้ใช้ทั่วไปไปสู่ระดับ NT AUTHORITY\\SYSTEM ได้โดยตรง",
+      "spec_chips": [
+        "🚨 0-Day Vulnerability",
+        "🔑 Privilege Escalation",
+        "🛡️ Windows Security"
+      ],
+      "hype_score": 90,
+      "real_impact_score": 94,
+      "spy_verdict": "GAME CHANGER",
+      "source_name": "Ars Technica",
+      "source_url": "https://arstechnica.com/security/2026/11/windows-0-day-dropped-by-disgruntled-researcher-hands-hackers-system-rights/"
+    },
+    {
+      "track": "software_devtools",
+      "headline": "Gemini 4 Hydrogen ขยายทัพ: อัดขุมพลังเอเจนต์เข้าสู่ระบบงานองค์กร",
+      "paparazzi_hook": "Google สู้ไม่ถอย! เปิดตัว Gemini 4 Hydrogen ออกแบบมาเพื่อ Agentic Workflows โดยเฉพาะ พร้อมเชื่อมต่อระบบการทำงานและคำสั่งอัตโนมัติแบบไร้รอยต่อ!",
+      "engineer_spec_summary": "Google ประกาศเปิดตัวโมเดลตระกูล Gemini 4 Hydrogen ที่เน้นการทำงานร่วมกับเวิร์กโฟลว์ของเอเจนต์ รองรับการเรียกใช้ Tool Use ขั้นสูงและการประมวลผลคำสั่งแบบต่อเนื่อง",
+      "spec_chips": [
+        "🤖 Agentic Workflow",
+        "🌐 Enterprise Integration",
+        "⚡ Hydrogen Engine"
+      ],
+      "hype_score": 86,
+      "real_impact_score": 87,
+      "spy_verdict": "SOLID UPGRADE",
+      "source_name": "Google AI Blog",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbnlqelBIT1ZXblFBa25zdHlXalhPR2Z2b2xLZ2lmeEtFbUFXS3Mya3FtU0tyeGJrOXpHVEJOdFpDVUZSUTVOUHA0WjRiakw2a2hIRzc3ZHBfM3pDT3dKTDdfMExNQ2FnU1NWSHI3UGpXX2lVSEUxeVYwb2FfNE5vRGJnMjhWSzU5WkFrdmtOdW5Fb0lja1dFN3JUMkQ5R01JRXhNUA?oc=5"
+    }
+  ],
+  "action_compass": {
+    "switch_now": [
+      {
+        "item": "อัปเดตระบบปฏิบัติการ Windows และแพตช์ความปลอดภัย Git",
+        "reason": "ป้องกันการโจมตีจากช่องโหว่ SignDrop และช่องโหว่การทำ Clone ใน Git"
+      }
+    ],
+    "wait_next_ep": [
+      {
+        "item": "การซื้ออุปกรณ์ประมวลผลชิป GPU ล็อตใหม่",
+        "reason": "รอดูทิศทางข้อบังคับการส่งออกชิปฉบับใหม่จากสภาคองเกรส"
+      }
+    ],
+    "skip_hype_trap": [
+      {
+        "item": "การปล่อยให้ AI Agent ทำ Breaking Upgrade อัตโนมัติโดยไม่กำกับ SemVer 2.0.0",
+        "reason": "เอเจนต์อาจมองข้าม Breaking Changes หากเลขเวอร์ชันเปลี่ยนแบบ Minor"
+      }
+    ]
+  },
+  "launch_radar": [
+    {
+      "name": "Gemini 4 Hydrogen",
+      "category": "AI Model",
+      "vendor": "Google",
+      "killer_spec": "ปรับแต่งเพื่อ Agentic Workflows และ Multi-Tool Use",
+      "availability": "API",
+      "source_url": "https://news.google.com/rss/articles/CBMipAFBVV95cUxNbnlqelBIT1ZXblFBa25zdHlXalhPR2Z2b2xLZ2lmeEtFbUFXS3Mya3FtU0tyeGJrOXpHVEJOdFpDVUZSUTVOUHA0WjRiakw2a2hIRzc3ZHBfM3pDT3dKTDdfMExNQ2FnU1NWSHI3UGpXX2lVSEUxeVYwb2FfNE5vRGJnMjhWSzU5WkFrdmtOdW5Fb0lja1dFN3JUMkQ5R01JRXhNUA?oc=5"
+    },
+    {
+      "name": "Claude Electronics Design Capabilities",
+      "category": "AI Model Feature",
+      "vendor": "Anthropic",
+      "killer_spec": "ออกแบบวงจรอิเล็กทรอนิกส์และต้นแบบฮาร์ดแวร์ตั้งแต่ต้นจนจบ",
+      "availability": "Beta",
+      "source_url": "https://news.google.com/rss/articles/CBMibEFVX3lxTFBCTmk0c0tyNmVjUlFGNGlCZUtLSkxDQS13Unc1LUVXanhOVmt2a2xTLUQ2Vm5LZ2RLQnMzVUhUQXFLTVBfd1VQZi01V0ppVkZLU0VIcXNJT3V3Ul9ZSEFUS3l6S2ZLY0tHOVgxNw?oc=5"
+    },
+    {
+      "name": "Apple Health AI Usage Study App",
+      "category": "Software",
+      "vendor": "Apple",
+      "killer_spec": "แพลตฟอร์มวิจัยการปฏิสัมพันธ์ระหว่างผู้ใช้กับ AI ด้านสุขภาพ",
+      "availability": "Pre-order",
+      "source_url": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/"
+    }
+  ],
+  "track_briefs": [
+    {
+      "track": "ai_frontier",
+      "tag": "#ScientificAI",
+      "headline": "OpenAI เปิดตัวบล็อกสำหรับงานวิจัยวิทยาศาสตร์โดยเฉพาะ",
+      "punchline": "มุ่งเป้าเร่งการค้นพบทางวิทยาศาสตร์ผ่านพลังของปัญญาประดิษฐ์",
+      "source_url": "https://openai.com/index/our-new-blog-for-science"
+    },
+    {
+      "track": "hardware_silicon",
+      "tag": "#AppleHealth",
+      "headline": "Apple เริ่มต้นโครงการศึกษาวิจัยการใช้ AI ในการดูแลสุขภาพ",
+      "punchline": "สำรวจประสิทธิภาพและการตอบสนองของ Conversational AI กับผู้ป่วยจริง",
+      "source_url": "https://www.apple.com/newsroom/2026/11/apple-launches-research-study-to-explore-the-use-of-ai-for-health/"
+    },
+    {
+      "track": "software_devtools",
+      "tag": "#AgenticEng",
+      "headline": "GitHub ดันแนวทาง Agentic Engineering ข้ามขั้นการสร้างโค้ด",
+      "punchline": "ขยายบทบาท Copilot ครอบคลุมการวางแผน รีวิว และแก้ปัญหา Production",
+      "source_url": "https://github.blog/ai-and-ml/github-copilot/beyond-code-generation-a-developers-guide-to-agentic-engineering/"
+    },
+    {
+      "track": "local_open_ai",
+      "tag": "#EmbodiedAI",
+      "headline": "EgoX นำเสนอการควบคุมหุ่นยนต์ข้ามรูปแบบด้วย Embodiment Dreaming",
+      "punchline": "ผสานประสบการณ์มนุษย์และหุ่นยนต์จำลองเพื่อสร้างนโยบายการจัดการอเนกประสงค์",
+      "source_url": "https://huggingface.co/papers/2611.16728"
+    },
+    {
+      "track": "deep_tech",
+      "tag": "#BrainImplants",
+      "headline": "ผู้ร่วมทดสอบชิปฝองในสมองเรียกร้องอิสรภาพและลดสัญญา NDA",
+      "punchline": "อาสาสมัครต้องการสิทธิ์ในการสั่งการและเปิดเผยประสบการณ์ใช้งานจริง",
+      "source_url": "https://www.technologyreview.com/2026/11/13/1148474/more-autonomy-fewer-ndas-volunteers-have-new-requests-for-brain-implant-trials/"
+    }
+  ],
+  "next_week_watchlist": [
+    {
+      "window": "สัปดาห์หน้า",
+      "event": "การประกาศมาตรการคุมเข้มส่งออกชิป AI ฉบับใหม่จากรัฐบาลสหรัฐฯ",
+      "hype_level": "HIGH"
+    },
+    {
+      "window": "ปลายเดือนพฤศจิกายน",
+      "event": "การเปิดใช้งาน Gemini 4 Hydrogen บนอุปกรณ์พกพาเพิ่มเติม",
+      "hype_level": "MEDIUM"
+    }
+  ],
+  "audio_script_th": "สวัสดีเช้าวันจันทร์ครับ นี่คือคลื่นลับ Cyber Paparazzi สรุปข่าว IT และ AI รอบสัปดาห์ประจำสัปดาห์ที่ 47 ปี 2026 สัปดาห์นี้สมรภูมิ AI ก้าวเข้าสู่ยุควิทยาศาสตร์ขั้นสูงเมื่อ OpenAI ปล่อยโมเดล GPT-6 Astra ช่วยนักวิจัยพิสูจน์ทฤษฎีฟิสิกส์อนุภาคบน Lattice ได้สำเร็จ ขณะที่ฝั่ง Anthropic ไม่ยอมน้อยหน้า อัปเกรด Claude ให้สามารถออกแบบวงจรอิเล็กทรอนิกส์ได้แบบครบวงจร ด้านฮาร์ดแวร์การเมืองร้อนระอุ สภาคองเกรสเตรียมงัดมาตรการคุมเข้มการส่งออกชิป AI หลังเกิดดราม่าเกี่ยวกับ อดีต CEO NVIDIA ส่วนสายความปลอดภัยต้องระวัง ช่องโหว่ SignDrop บน Windows กำลังถูกโจมตีเพื่อยึดสิทธิ์ระบบ แนะนำให้ทุกท่านรีบอัปเดตแพตช์ด่วน แล้วพบกันใหม่สัปดาห์หน้าครับ"
+}

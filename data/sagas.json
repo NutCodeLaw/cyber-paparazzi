@@ -3,36 +3,36 @@
     "saga_id": "frontier-elemental-models",
     "series_title": "The Frontier AI Model Race (Google • OpenAI • Anthropic)",
     "vendor": "Multi-Lab Frontier",
-    "episode_badge": "EP.46 • FINTECH AGENT ESCALATION",
-    "completion_pct": 74,
-    "previously_on": "สมรภูมิโมเดลเน้นแข่ง Benchmark การคิดวิเคราะห์และแก้โค้ดแบบก้าวกระโดด",
-    "latest_twist": "OpenAI เปิดตัว ChatGPT Wallet ให้ Agent ใน ChatGPT Work และ Codex ทำธุรกรรมซื้อของได้จริง พร้อมระบบคุ้มครองบัตร",
-    "power_up_multiplier": "💳 Agentic Direct Payment + 50% Dev Output",
-    "next_episode_rumor": "การทดสอบระบบอนุมัติธุรกรรมแบบ Real-time Multi-agent ในสเกลองค์กร",
+    "episode_badge": "EP.47 • QUANTUM SCIENCE & ELECTRONIC DESIGN",
+    "completion_pct": 79,
+    "previously_on": "OpenAI จุดชนวนระบบการเงิน Agentic Payments ด้วย ChatGPT Wallet ในสัปดาห์ก่อน",
+    "latest_twist": "OpenAI เผย GPT-6 Astra ช่วยคิดและพิสูจน์ทฤษฎีทางฟิสิกส์ระดับ Standard Model ขณะที่ Claude สามารถออกแบบต้นแบบอิเล็กทรอนิกส์ได้แบบครบวงจร",
+    "power_up_multiplier": "⚛️ Scientific Proofs & Electronic Hardware Automation",
+    "next_episode_rumor": "การเปิดตัวโมเดลสายวิทยาศาสตร์บริสุทธิ์เพื่อเร่งการค้นพบยาและวัสดุศาสตร์",
     "element_roster": [
       {
         "number": "01",
         "symbol": "Gm",
         "name": "Gemini 4 Hydrogen",
-        "role_tag": "Search Core",
+        "role_tag": "Agentic Workflows",
         "multiplier_badge": "Search Native",
-        "status": "NEW"
+        "status": "UNLOCKED"
       },
       {
         "number": "02",
         "symbol": "Cl",
-        "name": "Claude Sonnet",
+        "name": "Claude Electronics Engine",
         "role_tag": "Hardware Designer",
-        "multiplier_badge": "SemVer Sensitive",
-        "status": "UNLOCKED"
+        "multiplier_badge": "Full PCB Design",
+        "status": "NEW"
       },
       {
-        "number": "03",
-        "symbol": "Gp",
-        "name": "ChatGPT Wallet / Codex",
-        "role_tag": "Autonomous Buyer",
-        "multiplier_badge": "Direct Checkout",
-        "status": "UNLOCKED"
+        "number": "04",
+        "symbol": "As",
+        "name": "GPT-6 Astra",
+        "role_tag": "Quantum Theorist",
+        "multiplier_badge": "Standard Model",
+        "status": "NEW"
       }
     ]
   },
@@ -40,36 +40,28 @@
     "saga_id": "silicon-titan-war",
     "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • AMD)",
     "vendor": "Silicon Titans",
-    "episode_badge": "EP.46 • SILICON SURVEILLANCE & SMART DISPLAY",
-    "completion_pct": 71,
-    "previously_on": "ขับเคี่ยวแย่งชิงสเปกหน่วยความจำแบนด์วิดท์สูงและประหยัดพลังงานในระดับดาต้าเซ็นเตอร์",
-    "latest_twist": "NVIDIA รับปากทำระบบแกะรอยชิปตามกฎหมาย Chip Security Act ส่วน Apple วางจำหน่ายจออัจฉริยะ HomeView ทั่วโลก",
-    "power_up_multiplier": "📡 Hardware Traceability & Ambient Control",
-    "next_episode_rumor": "ข้อบังคับด้าน Firmware ล็อกพิกัดภูมิศาสตร์ใน GPU ล็อตส่งออกปี 2027",
+    "episode_badge": "EP.47 • GEOPOLITICAL SPY & AI HEALTH STUDY",
+    "completion_pct": 75,
+    "previously_on": "NVIDIA รับปากทำระบบแกะรอยฮาร์ดแวร์เพื่อป้องกันการลักลอบส่งออกชิป",
+    "latest_twist": "สภาสหรัฐฯ เตรียมยึดกฎคุมเข้มส่งออกชิป AI หลังดราม่า Jensen Huang และสายลับจีน ส่วน Apple เปิดการศึกษาวิจัย AI เพื่อสุขภาพ",
+    "power_up_multiplier": "🏥 Health Conversational AI & Strict Geo-Export Rules",
+    "next_episode_rumor": "มาตรการล็อกระดับเฟิร์มแวร์ในชิปประมวลผลรุ่นถัดไปตามข้อกำหนดความมั่นคง",
     "element_roster": [
       {
         "number": "14",
         "symbol": "Nv",
         "name": "NVIDIA Tracked Silicon",
         "role_tag": "Geo-Fence GPU",
-        "multiplier_badge": "Anti-Smuggling",
+        "multiplier_badge": "Export Restricted",
         "status": "UNLOCKED"
       },
       {
-        "number": "15",
+        "number": "17",
         "symbol": "Ap",
-        "name": "Apple HomeView",
-        "role_tag": "Ambient Display",
-        "multiplier_badge": "Smart Hub",
-        "status": "UNLOCKED"
-      },
-      {
-        "number": "16",
-        "symbol": "Am",
-        "name": "AMD ROCm",
-        "role_tag": "Open Challenger",
-        "multiplier_badge": "ROCm Stack",
-        "status": "RUMORED"
+        "name": "Apple Health AI Study",
+        "role_tag": "Clinical Intelligence",
+        "multiplier_badge": "Virtual Study",
+        "status": "NEW"
       }
     ]
   },
@@ -77,35 +69,19 @@
     "saga_id": "open-weight-uprising",
     "series_title": "Open-Weight & Local AI Rebellion",
     "vendor": "Open-Source Ecosystem",
-    "episode_badge": "EP.46 • MULTI-AGENT MEMORY PROTOCOLS",
-    "completion_pct": 78,
-    "previously_on": "โมเดลเปิดเสรีไล่กวดด้านพารามิเตอร์และการรัน Inference ในเครื่องส่วนบุคคล",
-    "latest_twist": "งานวิจัยเปิดสถาปัตยกรรม Multi-Granularity Memory สกัดความจำเอเจนต์หลายตัวข้ามเซสชันโดยไม่ต้องเทรนโมเดลใหม่",
-    "power_up_multiplier": "🧠 Zero-Retrain Dynamic Memory Extraction",
-    "next_episode_rumor": "สแต็ก Memory Synchronization แบบ P2P ระหว่างเครื่อง Edge",
+    "episode_badge": "EP.47 • ADAPTIVE REASONING & HYBRID MODELS",
+    "completion_pct": 82,
+    "previously_on": "วงการวิจัยเปิดสถาปัตยกรรม Multi-Granularity Memory สำหรับเอเจนต์",
+    "latest_twist": "งานวิจัยใหม่ The Value of Thinking นำเสนอการเรียนรู้ว่าเมื่อไหร่ควรใช้เหตุผลในโมเดลไฮบริดโดยไม่ต้องสร้างโทเคนฟุ่มเฟือย",
+    "power_up_multiplier": "💡 Dynamic Reasoning Token Optimization",
+    "next_episode_rumor": "การรันโมเดลไฮบริดแบบปรับการคิดตามความยากบนฮาร์ดแวร์ขอบแดน",
     "element_roster": [
       {
-        "number": "21",
-        "symbol": "Ds",
-        "name": "DeepSeek R1 Core",
-        "role_tag": "Open Reasoning",
-        "multiplier_badge": "Zero Cost Logic",
-        "status": "UNLOCKED"
-      },
-      {
-        "number": "22",
-        "symbol": "Qw",
-        "name": "Qwen Code Engine",
-        "role_tag": "Polyglot Agent",
-        "multiplier_badge": "Local King",
-        "status": "UNLOCKED"
-      },
-      {
-        "number": "23",
-        "symbol": "Mg",
-        "name": "Multi-Granularity Memory",
-        "role_tag": "Agentic Memory",
-        "multiplier_badge": "Zero Retrain",
+        "number": "24",
+        "symbol": "Vt",
+        "name": "Value-of-Thinking Core",
+        "role_tag": "Hybrid Decision",
+        "multiplier_badge": "Selective Reasoning",
         "status": "NEW"
       }
     ]

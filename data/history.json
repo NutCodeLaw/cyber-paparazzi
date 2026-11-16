@@ -30,5 +30,37 @@
       }
     ],
     "updated_at": "2026-11-15T02:16:34.811244+07:00"
+  },
+  {
+    "week_id": "2026-W47",
+    "date": "2026-11-16",
+    "episode_title": "GPT-6 Astra & Quantum Proofs: ชิประเบิด สปายป่วน วงการ AI เดือด",
+    "topics": [
+      {
+        "title": "GPT-6 Astra ทะลายพรมแดนฟิสิกส์: ช่วยพิสูจน์ Standard Model บน Lattice",
+        "track": "ai_frontier"
+      },
+      {
+        "title": "สภาสหรัฐฯ เดือด! จ่อล้างไพ่กฎส่งออกชิป AI หลังดราม่า Jensen Huang",
+        "track": "hardware_silicon"
+      },
+      {
+        "title": "ศึก SemVer ของ AI Coding Agents: Claude Sonnet 5.5 สอบผ่าน หรือตาบอดกับเลขเวอร์ชัน?",
+        "track": "software_devtools"
+      },
+      {
+        "title": "The Value of Thinking: โมเดลไฮบริดคิดก่อนตอบ เลิกเปลืองโทเคนโดยไม่จำเป็น",
+        "track": "local_open_ai"
+      },
+      {
+        "title": "ผ่าวิกฤตความปลอดภัย: ช่องโหว่ SignDrop บน Windows ให้สิทธิ์ System แฮกเกอร์รุมยึดเครื่อง",
+        "track": "deep_tech"
+      },
+      {
+        "title": "Gemini 4 Hydrogen ขยายทัพ: อัดขุมพลังเอเจนต์เข้าสู่ระบบงานองค์กร",
+        "track": "software_devtools"
+      }
+    ],
+    "updated_at": "2026-11-16T09:17:53.622607+07:00"
   }
 ]
