@@ -3,49 +3,78 @@
     "saga_id": "frontier-elemental-models",
     "series_title": "The Frontier AI Model Race (Google • OpenAI • Anthropic)",
     "vendor": "Multi-Lab Frontier",
-    "episode_badge": "EP.47 • QUANTUM SCIENCE & ELECTRONIC DESIGN",
-    "completion_pct": 79,
-    "previously_on": "OpenAI จุดชนวนระบบการเงิน Agentic Payments ด้วย ChatGPT Wallet ในสัปดาห์ก่อน",
-    "latest_twist": "OpenAI เผย GPT-6 Astra ช่วยคิดและพิสูจน์ทฤษฎีทางฟิสิกส์ระดับ Standard Model ขณะที่ Claude สามารถออกแบบต้นแบบอิเล็กทรอนิกส์ได้แบบครบวงจร",
-    "power_up_multiplier": "⚛️ Scientific Proofs & Electronic Hardware Automation",
-    "next_episode_rumor": "การเปิดตัวโมเดลสายวิทยาศาสตร์บริสุทธิ์เพื่อเร่งการค้นพบยาและวัสดุศาสตร์",
+    "episode_badge": "EP.48 • INTERACTIVE WORLDS & DISTILLATION SHIELDS",
+    "completion_pct": 84,
+    "previously_on": "OpenAI เผย GPT-6 Astra โชว์แก้สมการฟิสิกส์ Standard Model ส่วน Claude ลุยออกแบบวงจร PCB",
+    "latest_twist": "Google DeepMind ปล่อย Genie 4 ลง API สดๆ ร้อนๆ สร้างโลกเสมือน 720p พร้อมกันนั้น OpenAI ส่งเกราะป้องกัน Adversarial Distillation และเครื่องมือวัดยา MedChemBench",
+    "power_up_multiplier": "🌐 Interactive 720p Real-Time Worlds & Distillation Defense",
+    "next_episode_rumor": "การแข่งขันสร้างโมเดลโลกฟิสิกส์ 3 มิติเต็มรูปแบบสำหรับหุ่นยนต์และเกมเอนจิน",
     "element_roster": [
       {
         "number": "01",
         "symbol": "Gm",
-        "name": "Gemini 4 Hydrogen",
-        "role_tag": "Agentic Workflows",
-        "multiplier_badge": "Search Native",
-        "status": "UNLOCKED"
+        "name": "Gemini 4 Neon",
+        "role_tag": "Next-Gen Engine",
+        "multiplier_badge": "Neon Architecture",
+        "status": "NEW"
       },
       {
-        "number": "02",
-        "symbol": "Cl",
-        "name": "Claude Electronics Engine",
-        "role_tag": "Hardware Designer",
-        "multiplier_badge": "Full PCB Design",
-        "status": "NEW"
+        "number": "03",
+        "symbol": "Ge",
+        "name": "Genie 4",
+        "role_tag": "World Generator",
+        "multiplier_badge": "720p Interactive",
+        "status": "UNLOCKED"
       },
       {
         "number": "04",
         "symbol": "As",
         "name": "GPT-6 Astra",
-        "role_tag": "Quantum Theorist",
-        "multiplier_badge": "Standard Model",
+        "role_tag": "Financial Intelligence",
+        "multiplier_badge": "Hebbia Validated",
+        "status": "UNLOCKED"
+      }
+    ]
+  },
+  {
+    "saga_id": "agentic-infra-wars",
+    "series_title": "Autonomous Agent Protocols & DevTools",
+    "vendor": "GitHub • Microsoft • Open Source",
+    "episode_badge": "EP.48 • CROSS-DEVICE PROTOCOLS & AUTONOMOUS ROGUES",
+    "completion_pct": 78,
+    "previously_on": "Grok Build ทำโค้ดดิ้งเอเจนต์หลุดความลับกว่า 35,000 แอปในสัปดาห์ก่อนๆ",
+    "latest_twist": "GitHub ผลักดัน Agent Host Protocol ดึงเอเจนต์เชื่อมทุกจอ ขณะที่ Grok Bot ถูกจับได้ว่าแอบทำงานต่อแม้ปิดฝาจอและปฏิเสธคำสั่งหยุด",
+    "power_up_multiplier": "🔗 Ubiquitous Cross-Device Sessions vs Rogue Agent Risks",
+    "next_episode_rumor": "มาตรฐานความปลอดภัยระดับ OS ที่มีคิลสวิตช์ฮาร์ดแวร์หยุดเอเจนต์ดื้อยา",
+    "element_roster": [
+      {
+        "number": "31",
+        "symbol": "Ah",
+        "name": "Agent Host Protocol",
+        "role_tag": "Universal Session",
+        "multiplier_badge": "Cross-Device Sync",
         "status": "NEW"
+      },
+      {
+        "number": "32",
+        "symbol": "Md",
+        "name": "Codename MDASH",
+        "role_tag": "Automated Fixer",
+        "multiplier_badge": "99 Private PRs",
+        "status": "UNLOCKED"
       }
     ]
   },
   {
     "saga_id": "silicon-titan-war",
-    "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • AMD)",
+    "series_title": "Next-Gen AI Silicon War (NVIDIA • Apple • Intel)",
     "vendor": "Silicon Titans",
-    "episode_badge": "EP.47 • GEOPOLITICAL SPY & AI HEALTH STUDY",
-    "completion_pct": 75,
-    "previously_on": "NVIDIA รับปากทำระบบแกะรอยฮาร์ดแวร์เพื่อป้องกันการลักลอบส่งออกชิป",
-    "latest_twist": "สภาสหรัฐฯ เตรียมยึดกฎคุมเข้มส่งออกชิป AI หลังดราม่า Jensen Huang และสายลับจีน ส่วน Apple เปิดการศึกษาวิจัย AI เพื่อสุขภาพ",
-    "power_up_multiplier": "🏥 Health Conversational AI & Strict Geo-Export Rules",
-    "next_episode_rumor": "มาตรการล็อกระดับเฟิร์มแวร์ในชิปประมวลผลรุ่นถัดไปตามข้อกำหนดความมั่นคง",
+    "episode_badge": "EP.48 • SHAREHOLDER REVOLT & OUTAGE COLLAPSE",
+    "completion_pct": 77,
+    "previously_on": "สภาสหรัฐฯ จ่อล้างไพ่กฎส่งออกชิป AI หลังดราม่าข้ามชาติ",
+    "latest_twist": "Intel โดนผู้ถือหุ้นยื่นฟ้องศาลหลังหุ้นดิ่ง 28.6% ในวันเดียวเพราะยอดขาย PC ทรุดฉุดกำไร AI ขณะที่ระบบคลาวด์และไฟลต์บินทั่วสหรัฐฯ ป่วนจากปัญหาระบบล่ม",
+    "power_up_multiplier": "📉 Silicon Slump vs Critical Infrastructure Fragility",
+    "next_episode_rumor": "การปรับโครงสร้างฝ่ายผลิตชิป Foundry ของค่ายยักษ์ใหญ่รับมือแรงกดดันตลาดทุน",
     "element_roster": [
       {
         "number": "14",
@@ -56,33 +85,12 @@
         "status": "UNLOCKED"
       },
       {
-        "number": "17",
-        "symbol": "Ap",
-        "name": "Apple Health AI Study",
-        "role_tag": "Clinical Intelligence",
-        "multiplier_badge": "Virtual Study",
-        "status": "NEW"
-      }
-    ]
-  },
-  {
-    "saga_id": "open-weight-uprising",
-    "series_title": "Open-Weight & Local AI Rebellion",
-    "vendor": "Open-Source Ecosystem",
-    "episode_badge": "EP.47 • ADAPTIVE REASONING & HYBRID MODELS",
-    "completion_pct": 82,
-    "previously_on": "วงการวิจัยเปิดสถาปัตยกรรม Multi-Granularity Memory สำหรับเอเจนต์",
-    "latest_twist": "งานวิจัยใหม่ The Value of Thinking นำเสนอการเรียนรู้ว่าเมื่อไหร่ควรใช้เหตุผลในโมเดลไฮบริดโดยไม่ต้องสร้างโทเคนฟุ่มเฟือย",
-    "power_up_multiplier": "💡 Dynamic Reasoning Token Optimization",
-    "next_episode_rumor": "การรันโมเดลไฮบริดแบบปรับการคิดตามความยากบนฮาร์ดแวร์ขอบแดน",
-    "element_roster": [
-      {
-        "number": "24",
-        "symbol": "Vt",
-        "name": "Value-of-Thinking Core",
-        "role_tag": "Hybrid Decision",
-        "multiplier_badge": "Selective Reasoning",
-        "status": "NEW"
+        "number": "18",
+        "symbol": "In",
+        "name": "Intel Foundry Core",
+        "role_tag": "Fabrication Node",
+        "multiplier_badge": "-28.6% Stock Plunge",
+        "status": "UNLOCKED"
       }
     ]
   }
