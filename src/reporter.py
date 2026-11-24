@@ -233,8 +233,18 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
   <meta name="color-scheme" content="light dark">
   <script>
     try {
-      const saved = localStorage.getItem("color-scheme");
-      document.querySelector('meta[name="color-scheme"]').content = saved || "dark";
+      var t = localStorage.getItem("hq_theme");
+      if (!t) {
+        var leg = localStorage.getItem("color-scheme");
+        if (leg === "light" || leg === "dark") t = leg;
+      }
+      var m = document.querySelector('meta[name="color-scheme"]');
+      if (t === "light" || t === "sepia" || t === "dark") {
+        document.documentElement.setAttribute("data-theme", t);
+        if (m) m.content = (t === "dark" ? "dark" : "light");
+      } else if (m) {
+        m.content = "light dark";
+      }
     } catch (e) {}
   </script>
   <title>__PAGE_TITLE__</title>
@@ -242,43 +252,327 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch:wght@500;600;700&family=Noto+Sans+Thai:wght@400;500;600;700;800&family=JetBrains+Mono:wght@500;700&display=swap" rel="stylesheet">
   <style>
+    /* Modern Web 2026 Color Scheme + 3 Tailored Themes (Wired Light / PostHog Sepia / Linear Cyber Dark) */
     :root {
       color-scheme: light dark;
-      --bg-canvas: light-dark(#f1f5f9, #060913);
-      --bg-surface: light-dark(#ffffff, #0e1628);
-      --bg-elevated: light-dark(#e2e8f0, #16213a);
-      --bg-glass: light-dark(rgba(255, 255, 255, 0.9), rgba(14, 22, 40, 0.88));
-      --text-primary: light-dark(#0f172a, #f1f5f9);
-      --text-secondary: light-dark(#475569, #94a3b8);
-      --border-subtle: light-dark(#cbd5e1, #243352);
-      --accent-cyan: light-dark(#0284c7, #00f5d4);
-      --accent-gold: light-dark(#d97706, #ffb703);
-      --accent-pink: light-dark(#db2777, #ff4d8d);
-      --accent-green: light-dark(#059669, #10b981);
-      --accent-purple: light-dark(#7c3aed, #a78bfa);
-      --shadow-card: light-dark(0 8px 24px rgba(15, 23, 42, 0.08), 0 10px 30px rgba(0, 0, 0, 0.45));
+      --bg-canvas: #f5f5f5;
+      --bg-surface: #ffffff;
+      --bg-elevated: #ebebeb;
+      --bg-glass: rgba(255, 255, 255, 0.9);
+      --text-primary: #000000;
+      --text-secondary: #4a4a4a;
+      --border-subtle: #dcdcdc;
+      --accent-cyan: #057dbc;
+      --accent-gold: #b45309;
+      --accent-pink: #db2777;
+      --accent-green: #059669;
+      --accent-purple: #6d28d9;
+      --on-accent: #ffffff;
+      --wiretap-bg: #141413;
+      --wiretap-ink: #f7f8f8;
+      --shadow-card: 0 6px 20px rgba(0, 0, 0, 0.06);
+      --scrollbar-thumb: #b4b4b8;
+      --scrollbar-track: #ebebeb;
       --font-display: 'Chakra Petch', 'Noto Sans Thai', sans-serif;
       --font-body: 'Noto Sans Thai', system-ui, -apple-system, sans-serif;
       --font-mono: 'JetBrains Mono', monospace;
     }
-    :root:has(> head > meta[name="color-scheme"][content="dark"]) {
-      color-scheme: dark;
+    :root:has(> head > meta[name="color-scheme"][content="dark"]) { color-scheme: dark; }
+    :root:has(> head > meta[name="color-scheme"][content="light"]) { color-scheme: light; }
+
+    @media (prefers-color-scheme: dark) {
+      html:not([data-theme]) {
+        --bg-canvas: #010102;
+        --bg-surface: #0f1011;
+        --bg-elevated: #18191a;
+        --bg-glass: rgba(15, 16, 17, 0.88);
+        --text-primary: #f7f8f8;
+        --text-secondary: #9aa0aa;
+        --border-subtle: #23252a;
+        --accent-cyan: #00f5d4;
+        --accent-gold: #ffb703;
+        --accent-pink: #ff4d8d;
+        --accent-green: #27a644;
+        --accent-purple: #828fff;
+        --on-accent: #060913;
+        --wiretap-bg: #03060d;
+        --wiretap-ink: #00f5d4;
+        --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45);
+        --scrollbar-thumb: #3c3e44;
+        --scrollbar-track: #0f1011;
+      }
     }
-    :root:has(> head > meta[name="color-scheme"][content="light"]) {
-      color-scheme: light;
+
+    html[data-theme="sepia"] {
+      --bg-canvas: #eeefe9;
+      --bg-surface: #fcfcfa;
+      --bg-elevated: #e5e7e0;
+      --bg-glass: rgba(252, 252, 250, 0.9);
+      --text-primary: #23251d;
+      --text-secondary: #4d4f46;
+      --border-subtle: #bfc1b7;
+      --accent-cyan: #1078a3;
+      --accent-gold: #b17816;
+      --accent-pink: #cd4239;
+      --accent-green: #2c8c66;
+      --accent-purple: #7c44a6;
+      --on-accent: #ffffff;
+      --wiretap-bg: #23251d;
+      --wiretap-ink: #f7a501;
+      --shadow-card: 0 6px 20px rgba(35, 37, 29, 0.08);
+      --scrollbar-thumb: #a7aa9e;
+      --scrollbar-track: #e5e7e0;
+    }
+
+    html[data-theme="dark"] {
+      --bg-canvas: #010102;
+      --bg-surface: #0f1011;
+      --bg-elevated: #18191a;
+      --bg-glass: rgba(15, 16, 17, 0.88);
+      --text-primary: #f7f8f8;
+      --text-secondary: #9aa0aa;
+      --border-subtle: #23252a;
+      --accent-cyan: #00f5d4;
+      --accent-gold: #ffb703;
+      --accent-pink: #ff4d8d;
+      --accent-green: #27a644;
+      --accent-purple: #828fff;
+      --on-accent: #060913;
+      --wiretap-bg: #03060d;
+      --wiretap-ink: #00f5d4;
+      --shadow-card: 0 10px 30px rgba(0, 0, 0, 0.45);
+      --scrollbar-thumb: #3c3e44;
+      --scrollbar-track: #0f1011;
+    }
+
+    :root {
+      accent-color: var(--accent-cyan);
+      scrollbar-color: var(--scrollbar-thumb) var(--scrollbar-track);
+    }
+    ::selection {
+      background: var(--accent-cyan);
+      color: var(--on-accent);
     }
 
     *, *::before, *::after { box-sizing: border-box; }
-    html { scroll-behavior: smooth; }
+    html { overflow-y: auto; scroll-behavior: smooth; }
     body {
       margin: 0;
       font-family: var(--font-body);
       background: var(--bg-canvas);
       color: var(--text-primary);
       line-height: 1.55;
+      overflow-x: hidden;
       background-image:
-        radial-gradient(circle at 12% 8%, color-mix(in srgb, var(--accent-cyan) 12%, transparent), transparent 36%),
-        radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--accent-pink) 10%, transparent), transparent 34%);
+        radial-gradient(circle at 12% 8%, color-mix(in srgb, var(--accent-cyan) 9%, transparent), transparent 36%),
+        radial-gradient(circle at 88% 12%, color-mix(in srgb, var(--accent-pink) 8%, transparent), transparent 34%);
+    }
+    .tabular-nums { font-variant-numeric: tabular-nums; }
+
+    /* Sticky Top Glass Bar + Reading Progress */
+    .top-utility-bar {
+      position: sticky;
+      top: 0;
+      z-index: 800;
+      background: var(--bg-glass);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      border-bottom: 1px solid var(--border-subtle);
+    }
+    .top-utility-inner {
+      max-width: 1320px;
+      margin: 0 auto;
+      padding: 6px 12px;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 8px;
+    }
+    .util-brand {
+      font-family: var(--font-display);
+      font-size: 0.84rem;
+      font-weight: 700;
+      color: var(--text-primary);
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      min-width: 0;
+    }
+    .util-actions {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      flex-shrink: 0;
+    }
+    .theme-seg-wrap {
+      display: inline-flex;
+      align-items: center;
+      gap: 2px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      padding: 2px;
+      border-radius: 10px;
+    }
+    .theme-seg-btn {
+      appearance: none;
+      border: none;
+      background: transparent;
+      color: var(--text-secondary);
+      font-family: var(--font-body);
+      font-size: 0.74rem;
+      font-weight: 700;
+      padding: 4px 8px;
+      border-radius: 8px;
+      cursor: pointer;
+      white-space: nowrap;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .theme-seg-btn.is-active {
+      background: var(--bg-surface);
+      color: var(--accent-cyan);
+      box-shadow: 0 1px 3px rgba(0, 0, 0, 0.14);
+    }
+    .util-search-btn {
+      appearance: none;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 0.76rem;
+      font-weight: 700;
+      padding: 5px 9px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: inline-flex;
+      align-items: center;
+      gap: 4px;
+      white-space: nowrap;
+    }
+    .util-search-btn:hover { border-color: var(--accent-cyan); }
+    .kbd-hint {
+      font-size: 0.68rem;
+      padding: 1px 4px;
+      border-radius: 4px;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-secondary);
+      font-family: var(--font-mono);
+    }
+    .lbl-compact { display: none; }
+    @media (max-width: 540px) {
+      .lbl-full-sepia { display: none; }
+      .lbl-compact { display: inline; }
+      .kbd-hint { display: none; }
+      .util-brand-text { display: none; }
+      .theme-seg-btn { padding: 4px 7px; font-size: 0.72rem; }
+    }
+    @media (pointer: coarse) {
+      .theme-seg-btn, .util-search-btn { min-height: 40px; }
+    }
+    .reading-progress {
+      height: 3px;
+      width: 100%;
+      background: linear-gradient(90deg, var(--accent-cyan), var(--accent-pink));
+      transform-origin: 0 50%;
+      transform: scaleX(0);
+    }
+    @keyframes grow-progress {
+      from { transform: scaleX(0); }
+      to { transform: scaleX(1); }
+    }
+    @media (prefers-reduced-motion: no-preference) {
+      @supports (animation-timeline: scroll()) {
+        .reading-progress {
+          animation: grow-progress auto linear;
+          animation-timeline: scroll(root);
+        }
+      }
+    }
+
+    /* Native Quick Jump Modal Dialog */
+    dialog#quick-jump-dialog {
+      margin: auto;
+      width: min(580px, 92vw);
+      max-height: 82dvh;
+      border: 1px solid var(--border-subtle);
+      border-radius: 16px;
+      background: var(--bg-surface);
+      color: var(--text-primary);
+      padding: 0;
+      box-shadow: 0 24px 60px rgba(0, 0, 0, 0.35);
+      overflow: hidden;
+    }
+    dialog#quick-jump-dialog:modal { overscroll-behavior: contain; }
+    dialog#quick-jump-dialog::backdrop {
+      background: rgba(15, 23, 42, 0.56);
+      backdrop-filter: blur(4px);
+    }
+    .qj-head {
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 12px 16px;
+      border-bottom: 1px solid var(--border-subtle);
+      background: var(--bg-elevated);
+    }
+    .qj-title { font-size: 0.92rem; font-weight: 800; color: var(--text-primary); }
+    .qj-close {
+      appearance: none;
+      background: var(--bg-surface);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      width: 32px;
+      height: 32px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: 800;
+    }
+    .qj-search-wrap { padding: 12px 16px 8px; }
+    .qj-input {
+      width: 100%;
+      padding: 10px 12px;
+      border-radius: 10px;
+      border: 1px solid var(--border-subtle);
+      background: var(--bg-elevated);
+      color: var(--text-primary);
+      font-family: var(--font-body);
+      font-size: 0.9rem;
+    }
+    .qj-list {
+      max-height: 55dvh;
+      overflow-y: auto;
+      padding: 4px 12px 14px;
+      display: grid;
+      gap: 6px;
+    }
+    .qj-item {
+      appearance: none;
+      width: 100%;
+      text-align: left;
+      background: var(--bg-elevated);
+      border: 1px solid var(--border-subtle);
+      color: var(--text-primary);
+      padding: 9px 12px;
+      border-radius: 10px;
+      cursor: pointer;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      font-family: var(--font-body);
+      font-size: 0.83rem;
+    }
+    .qj-item:hover, .qj-item:focus-visible { border-color: var(--accent-cyan); }
+    .qj-item-tag {
+      font-size: 0.7rem;
+      font-weight: 700;
+      color: var(--accent-cyan);
+      background: color-mix(in srgb, var(--accent-cyan) 14%, transparent);
+      padding: 2px 7px;
+      border-radius: 999px;
+      flex-shrink: 0;
     }
 
     /* Accessibility Utilities */
@@ -324,8 +618,8 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
 
     /* Wiretap Ticker */
     .wiretap-bar {
-      background: light-dark(#0f172a, #03060d);
-      color: #00f5d4;
+      background: var(--wiretap-bg);
+      color: var(--wiretap-ink);
       border-bottom: 1px solid var(--border-subtle);
       overflow: hidden;
       font-family: var(--font-mono);
@@ -447,7 +741,7 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
     .btn:hover { transform: translateY(-1px); border-color: var(--accent-cyan); }
     .btn[aria-pressed="true"], .btn.active-mode {
       background: var(--accent-cyan);
-      color: #060913;
+      color: var(--on-accent);
       border-color: var(--accent-cyan);
     }
     .btn-pink[aria-pressed="true"] {
@@ -481,6 +775,8 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
     @media (max-width: 640px) {
       .header-actions { align-items: stretch; width: 100%; }
       .select-box { width: 100%; }
+      .mode-pill-group { width: 100%; }
+      .mode-pill-group .btn { flex: 1 1 auto; justify-content: center; }
     }
     .mode-pill-group {
       display: inline-flex;
@@ -541,6 +837,7 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
     }
     .heat-number {
       font-family: var(--font-mono);
+      font-variant-numeric: tabular-nums;
       font-size: 2.3rem;
       font-weight: 800;
       line-height: 1;
@@ -744,7 +1041,7 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
       font-size: 1.45rem;
       font-weight: 800;
       background: linear-gradient(135deg, var(--accent-cyan), var(--accent-pink));
-      color: #060913;
+      color: #ffffff;
       width: 54px;
       height: 54px;
       border-radius: 999px;
@@ -1028,19 +1325,55 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
     }
 
     @media (prefers-reduced-motion: reduce) {
+      ::view-transition-group(*), ::view-transition-old(*), ::view-transition-new(*) { animation: none !important; }
       .wiretap-scroll { animation: none; }
       .gauge-needle, .arms-bar-fill, .tug-left, .tug-right, .btn, .el-tile { transition: none; }
       .camera-flash { display: none; }
+      html { scroll-behavior: auto; }
+    }
+
+    /* White-Paper Print Normalization (GW-K02) */
+    @media print {
+      html, body {
+        color-scheme: light !important;
+        background: #ffffff !important;
+        color: #0f172a !important;
+        -webkit-print-color-adjust: exact !important;
+        print-color-adjust: exact !important;
+      }
+      .no-print, dialog, .wiretap-bar, .controls-row, .filter-toolbar { display: none !important; }
+      .card, .compass-col, .command-header {
+        background: #ffffff !important;
+        color: #0f172a !important;
+        border-color: #cbd5e1 !important;
+        box-shadow: none !important;
+        break-inside: avoid;
+      }
     }
   </style>
 </head>
 <body>
+  <nav class="top-utility-bar no-print" aria-label="แถบเครื่องมือและสลับธีมสี">
+    <div class="top-utility-inner">
+      <div class="util-brand">📸 <span class="util-brand-text">Cyber Paparazzi HQ</span></div>
+      <div class="util-actions">
+        <div class="theme-seg-wrap" role="group" aria-label="เลือกโหมดสีหน้าจอ">
+          <button type="button" class="theme-seg-btn" data-theme-btn="light" aria-pressed="false" onclick="setTheme('light')">☀️ สว่าง</button>
+          <button type="button" class="theme-seg-btn" data-theme-btn="sepia" aria-pressed="false" onclick="setTheme('sepia')">📖 <span class="lbl-full-sepia">ถนอมสายตา</span><span class="lbl-compact">ถนอม</span></button>
+          <button type="button" class="theme-seg-btn" data-theme-btn="dark" aria-pressed="false" onclick="setTheme('dark')">🌙 มืด</button>
+        </div>
+        <button type="button" id="quick-jump-btn" class="util-search-btn" aria-label="ค้นหาและกระโดดหมวด">🔍 <kbd class="kbd-hint">⌘K</kbd></button>
+      </div>
+    </div>
+    <div id="reading-progress" class="reading-progress" aria-hidden="true"></div>
+  </nav>
+
   <a href="#main-content" class="skip-link visually-hidden">ข้ามไปยังเนื้อหาหลัก</a>
   <div id="camera-flash" class="camera-flash" aria-hidden="true"></div>
   <div id="live-announcer" class="visually-hidden" aria-live="polite"></div>
 
   <!-- Live Spy Wiretap Ticker -->
-  <div class="wiretap-bar" aria-label="แถบดักฟังข่าวด่วน">
+  <div class="wiretap-bar no-print" aria-label="แถบดักฟังข่าวด่วน">
     <span class="wiretap-badge">📡 WIRETAP LIVE</span>
     <div class="wiretap-track">
       <div id="wiretap-scroll" class="wiretap-scroll"></div>
@@ -1062,11 +1395,10 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
           </div>
         </div>
 
-        <div class="header-actions">
+        <div class="header-actions no-print">
           <div style="display:flex; gap:8px; flex-wrap:wrap; align-items:center; max-width:100%;">
             <label for="archive-select" class="visually-hidden">เลือกสัปดาห์ย้อนหลัง</label>
             <select id="archive-select" class="select-box" aria-label="เลือกสัปดาห์ย้อนหลัง"></select>
-            <button type="button" id="theme-toggle-btn" class="btn" aria-label="สลับโหมดสีหน้าจอ">🌓 <span id="theme-toggle-label">โหมดสว่าง</span></button>
           </div>
         </div>
       </div>
@@ -1098,8 +1430,8 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
               <path d="M 68 35 A 80 80 0 0 1 132 35" fill="none" stroke="#ffb703" stroke-width="16"/>
               <path d="M 135 38 A 80 80 0 0 1 180 95" fill="none" stroke="#ff4d8d" stroke-width="16" stroke-linecap="round"/>
               <g id="gauge-needle" class="gauge-needle">
-                <polygon points="97,95 103,95 100,22" fill="#f8fafc"/>
-                <circle cx="100" cy="95" r="7" fill="#00f5d4"/>
+                <polygon points="97,95 103,95 100,22" fill="var(--text-primary)"/>
+                <circle cx="100" cy="95" r="7" fill="var(--accent-cyan)"/>
               </g>
             </svg>
             <div id="heat-score-val" class="heat-number">85</div>
@@ -1191,6 +1523,17 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
   </div>
 
   <textarea id="raw-markdown-data" class="visually-hidden" aria-hidden="true">__ESCAPED_RAW_MARKDOWN__</textarea>
+
+  <dialog id="quick-jump-dialog" closedby="any" aria-labelledby="qj-dialog-title">
+    <div class="qj-head">
+      <div id="qj-dialog-title" class="qj-title">🔍 ค้นหาและกระโดดหมวด (Cyber Paparazzi)</div>
+      <button type="button" id="qj-close-btn" class="qj-close" aria-label="ปิดหน้าต่างค้นหา">✕</button>
+    </div>
+    <div class="qj-search-wrap">
+      <input type="search" id="qj-search-input" class="qj-input" placeholder="พิมพ์ชื่อโมเดล, ค่ายเทค, หมวดข่าว, หรือเลือกธีมสี..." autocomplete="off">
+    </div>
+    <div id="qj-results-list" class="qj-list"></div>
+  </dialog>
 
   <script>
     const INITIAL_DOSSIER = __EMBEDDED_DOSSIER_JSON__;
@@ -1612,51 +1955,177 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
       });
     }
 
-    /* Dark Mode Toggle (modern-web-guidance dark-mode-toggle standard) */
+    /* 3-Mode Theme Engine (Wired Light / PostHog Sepia / Linear Cyber Dark) */
+    function getEffectiveTheme() {
+      try {
+        let saved = localStorage.getItem("hq_theme");
+        if (!saved) {
+          const leg = localStorage.getItem("color-scheme");
+          if (leg === "light" || leg === "dark") saved = leg;
+        }
+        if (saved === "light" || saved === "sepia" || saved === "dark") return saved;
+      } catch (e) {}
+      return (window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches) ? "dark" : "light";
+    }
+
+    function syncThemeUI() {
+      const active = getEffectiveTheme();
+      document.querySelectorAll("[data-theme-btn]").forEach((btn) => {
+        const isMatch = btn.getAttribute("data-theme-btn") === active;
+        btn.classList.toggle("is-active", isMatch);
+        btn.setAttribute("aria-pressed", String(isMatch));
+      });
+    }
+
+    function setTheme(theme) {
+      if (!["light", "sepia", "dark"].includes(theme)) theme = "light";
+      const apply = () => {
+        document.documentElement.setAttribute("data-theme", theme);
+        const meta = document.querySelector('meta[name="color-scheme"]');
+        if (meta) meta.content = (theme === "dark" ? "dark" : "light");
+        try { localStorage.setItem("hq_theme", theme); } catch (e) {}
+        syncThemeUI();
+      };
+      if (typeof document.startViewTransition === "function") {
+        document.startViewTransition(apply);
+      } else {
+        apply();
+      }
+      playSfx("radar");
+      announce("เปลี่ยนธีมเป็น " + theme);
+    }
+
     function initThemeToggle() {
-      const meta = document.querySelector('meta[name="color-scheme"]');
-      const btn = document.getElementById("theme-toggle-btn");
-      const label = document.getElementById("theme-toggle-label");
-
-      function getSystemDark() {
-        return window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
-      }
-      function getEffectiveScheme() {
-        const content = meta.content;
-        if (content === "dark" || content === "light") return content;
-        return getSystemDark() ? "dark" : "light";
-      }
-      function updateLabel() {
-        const eff = getEffectiveScheme();
-        label.textContent = eff === "dark" ? "โหมดสว่าง" : "โหมดมืด Cyber";
-      }
-
-      btn.addEventListener("click", () => {
-        const current = getEffectiveScheme();
-        const target = current === "dark" ? "light" : "dark";
-        const sys = getSystemDark() ? "dark" : "light";
-        try {
-          if (target === sys) {
-            localStorage.removeItem("color-scheme");
-            meta.content = "light dark";
-          } else {
-            localStorage.setItem("color-scheme", target);
-            meta.content = target;
-          }
-        } catch (e) {
-          meta.content = target;
-        }
-        updateLabel();
-        playSfx("radar");
-      });
-
       window.addEventListener("storage", (e) => {
-        if (e.key === "color-scheme") {
-          meta.content = e.newValue || "light dark";
-          updateLabel();
+        if (e.key === "hq_theme") {
+          const v = e.newValue;
+          const meta = document.querySelector('meta[name="color-scheme"]');
+          if (v === "light" || v === "sepia" || v === "dark") {
+            document.documentElement.setAttribute("data-theme", v);
+            if (meta) meta.content = (v === "dark" ? "dark" : "light");
+          } else {
+            document.documentElement.removeAttribute("data-theme");
+            if (meta) meta.content = "light dark";
+          }
+          syncThemeUI();
         }
       });
-      updateLabel();
+      if (window.matchMedia) {
+        window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", () => {
+          let saved = null;
+          try { saved = localStorage.getItem("hq_theme"); } catch (e) {}
+          if (!saved) syncThemeUI();
+        });
+      }
+      if (!CSS.supports("animation-timeline", "scroll()")) {
+        const progEl = document.getElementById("reading-progress");
+        const onScroll = () => {
+          if (!progEl) return;
+          const max = Math.max(1, document.documentElement.scrollHeight - window.innerHeight);
+          const pct = Math.max(0, Math.min(1, window.scrollY / max));
+          progEl.style.transform = `scaleX(${pct})`;
+        };
+        window.addEventListener("scroll", onScroll, { passive: true });
+        onScroll();
+      }
+      syncThemeUI();
+    }
+
+    function initQuickJump() {
+      const dlg = document.getElementById("quick-jump-dialog");
+      const btn = document.getElementById("quick-jump-btn");
+      const closeBtn = document.getElementById("qj-close-btn");
+      const input = document.getElementById("qj-search-input");
+      const list = document.getElementById("qj-results-list");
+      if (!dlg || !btn || !input || !list) return;
+
+      if (!("closedBy" in HTMLDialogElement.prototype)) {
+        dlg.addEventListener("click", (e) => {
+          if (e.target !== dlg) return;
+          const r = dlg.getBoundingClientRect();
+          if (r.top <= e.clientY && e.clientY <= r.top + r.height && r.left <= e.clientX && e.clientX <= r.left + r.width) return;
+          dlg.close();
+        });
+      }
+
+      function buildItems() {
+        const items = [
+          { label: "☀️ สลับเป็นโหมดสว่าง (Wired Editorial)", tag: "Theme", action: () => setTheme("light") },
+          { label: "📖 สลับเป็นโหมดถนอมสายตา (PostHog Cream)", tag: "Theme", action: () => setTheme("sepia") },
+          { label: "🌙 สลับเป็นโหมดมืด (Linear Cyber)", tag: "Theme", action: () => setTheme("dark") },
+          { label: "📡 Tech Heat & AI Arms Race Power Board", tag: "Section", action: () => document.getElementById("sec-radar-h")?.scrollIntoView({ behavior: "smooth" }) },
+          { label: "🧪 Periodic Table of Tech Series", tag: "Section", action: () => document.getElementById("sec-saga-h")?.scrollIntoView({ behavior: "smooth" }) },
+          { label: "⚔️ 1v1 Weekly Spec Showdown", tag: "Section", action: () => document.getElementById("sec-duel-h")?.scrollIntoView({ behavior: "smooth" }) },
+          { label: "📸 Paparazzi Scoops Vault (5 สายข่าว)", tag: "Section", action: () => document.getElementById("sec-scoops-h")?.scrollIntoView({ behavior: "smooth" }) },
+          { label: "🎯 Switch, Wait, or Skip Action Compass", tag: "Section", action: () => document.getElementById("sec-compass-h")?.scrollIntoView({ behavior: "smooth" }) },
+          { label: "🚀 Hardware & Software Launch Radar", tag: "Section", action: () => document.getElementById("sec-launch-h")?.scrollIntoView({ behavior: "smooth" }) },
+          { label: "⚡ Quick Wiretaps & Next Week Watchlist", tag: "Section", action: () => document.getElementById("sec-briefs-h")?.scrollIntoView({ behavior: "smooth" }) },
+        ];
+        (activeDossier.top_scoops || []).forEach((sc) => {
+          items.push({
+            label: `📸 ${sc.headline || ""}`,
+            tag: "Scoop",
+            action: () => {
+              activeTrack = "all";
+              searchQuery = "";
+              const searchEl = document.getElementById("scoop-search");
+              if (searchEl) searchEl.value = "";
+              renderTrackNav();
+              renderScoops();
+              document.getElementById("sec-scoops-h")?.scrollIntoView({ behavior: "smooth" });
+            }
+          });
+        });
+        return items;
+      }
+
+      let filtered = [];
+      function renderList(q) {
+        const all = buildItems();
+        const norm = (q || "").trim().toLowerCase();
+        filtered = norm ? all.filter(it => it.label.toLowerCase().includes(norm) || it.tag.toLowerCase().includes(norm)) : all.slice(0, 18);
+        list.replaceChildren();
+        filtered.forEach((it) => {
+          const b = document.createElement("button");
+          b.type = "button";
+          b.className = "qj-item";
+          const spLabel = document.createElement("span");
+          spLabel.textContent = it.label;
+          const spTag = document.createElement("span");
+          spTag.className = "qj-item-tag";
+          spTag.textContent = it.tag;
+          b.appendChild(spLabel);
+          b.appendChild(spTag);
+          b.addEventListener("click", () => { dlg.close(); it.action(); });
+          list.appendChild(b);
+        });
+      }
+
+      function openDlg() {
+        input.value = "";
+        renderList("");
+        dlg.showModal();
+        setTimeout(() => input.focus(), 40);
+      }
+
+      btn.addEventListener("click", openDlg);
+      if (closeBtn) closeBtn.addEventListener("click", () => dlg.close());
+      input.addEventListener("input", () => renderList(input.value));
+      input.addEventListener("keydown", (e) => {
+        if (e.key === "Enter" && filtered.length > 0) {
+          e.preventDefault();
+          dlg.close();
+          filtered[0].action();
+        }
+      });
+      document.addEventListener("keydown", (e) => {
+        if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === "k") {
+          const tag = document.activeElement ? document.activeElement.tagName : "";
+          if (tag === "INPUT" || tag === "TEXTAREA" || tag === "SELECT") return;
+          e.preventDefault();
+          if (dlg.open) dlg.close(); else openDlg();
+        }
+      });
     }
 
     /* Controls Binding */
@@ -1747,6 +2216,7 @@ HTML_SHELL_TEMPLATE = r"""<!DOCTYPE html>
     initThemeToggle();
     initControls();
     initArchiveSelect();
+    initQuickJump();
     renderDossier(INITIAL_DOSSIER);
   </script>
 </body>
