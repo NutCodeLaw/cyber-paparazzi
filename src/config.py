@@ -2,7 +2,9 @@
 Cyber Paparazzi Configuration Module
 """
 import os
+from datetime import date, datetime, timedelta, timezone
 from pathlib import Path
+from typing import List, Optional
 from dotenv import load_dotenv
 
 # Base paths
@@ -31,13 +33,32 @@ GEMINI_API_KEY = os.getenv("GEMINI_API_KEY", "").strip()
 TELEGRAM_BOT_TOKEN = os.getenv("TELEGRAM_BOT_TOKEN", "").strip()
 TELEGRAM_CHAT_ID = os.getenv("TELEGRAM_CHAT_ID", "-1003712039650").strip()
 
-# AI Models (Flagship LOW-thinking primary + non-deprecated GA fallbacks)
-GEMINI_MODELS = [
-    "gemini-3.8-flash",
-    "gemini-3.6-flash",
-    "gemini-3.5-flash-lite",
-    "gemini-flash-latest",
-]
+# AI Models (Auto-switches from 3.8-flash promo to 4-hydrogen starting 2027-01-01 BKK)
+_BKK_TZ = timezone(timedelta(hours=7))
+_HYDROGEN_CUTOVER_DATE = date(2027, 1, 1)
+
+
+def select_gemini_models(today_bkk: Optional[date] = None) -> List[str]:
+    """Return cost-optimal active Gemini model priority list for the given Bangkok date."""
+    current = today_bkk or datetime.now(_BKK_TZ).date()
+    if current >= _HYDROGEN_CUTOVER_DATE:
+        return [
+            "gemini-4-hydrogen",
+            "gemini-3.8-flash",
+            "gemini-3.6-flash",
+            "gemini-3.5-flash-lite",
+            "gemini-flash-latest",
+        ]
+    return [
+        "gemini-3.8-flash",
+        "gemini-4-hydrogen",
+        "gemini-3.6-flash",
+        "gemini-3.5-flash-lite",
+        "gemini-flash-latest",
+    ]
+
+
+GEMINI_MODELS = select_gemini_models()
 
 # 5 Core Spy Tracks
 SPY_TRACKS = {
