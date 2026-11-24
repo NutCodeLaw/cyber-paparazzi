@@ -67,7 +67,7 @@ def build_telegram_message(payload: Dict[str, Any]) -> str:
         f"⚔️ <b>1v1 Showdown:</b> {sd_verdict}\n\n"
         f"🕵️‍♂️ <b>3 ช็อตเด็ดรอบสัปดาห์:</b>\n"
         + "\n".join(scoop_lines)
-        + "\n\n🌐 <a href=\"https://nutcodelaw.github.io/cyber-paparazzi/\">เปิด Cyber Cockpit &amp; ฟังเสียงสรุป</a>"
+        + "\n\n🌐 <b>เปิด Cyber Cockpit &amp; ฟังเสียงสรุป:</b>\nhttps://nutcodelaw.github.io/cyber-paparazzi/"
     )
     if len(msg) > TELEGRAM_TARGET_MAX:
         # Trim gracefully while preserving valid HTML
@@ -76,7 +76,7 @@ def build_telegram_message(payload: Dict[str, Any]) -> str:
             f"🔥 <b>{ep_title}</b> (Heat: <code>{heat}/100</code>)\n\n"
             + "\n".join(scoop_lines[:3])
             + f"\n\n🏆 <b>#1:</b> {leader_line}\n"
-            + "🌐 <a href=\"https://nutcodelaw.github.io/cyber-paparazzi/\">เปิด Cyber Cockpit</a>"
+            + "🌐 <b>เปิด Cyber Cockpit:</b>\nhttps://nutcodelaw.github.io/cyber-paparazzi/"
         )
     return msg
 
